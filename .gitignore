@@ -1,0 +1,8 @@
+config/secrets.yml
+coverage/* 
+!coverage/.resultset.json
+.DS_Store
+*.db
+.irb_history
+.bundle
+.irbrc

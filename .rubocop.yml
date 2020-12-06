@@ -1,0 +1,45 @@
+---
+# Apply latest Ruby style guide and newly introduced cops
+AllCops:
+  TargetRubyVersion: 2.7
+  NewCops: enable
+
+GlobalVars:
+  AllowedVariables:
+    - $data
+
+# ignore block length in test code only
+Metrics/BlockLength:
+  Enabled: true
+  Exclude:
+    - spec/**/*
+    - Rakefile
+
+Security/YAMLLoad:
+  Enabled: true
+  Exclude:
+    - spec/**/*
+
+Style/HashSyntax:
+  Enabled: true
+  Exclude:
+    - Rakefile
+
+Style/SymbolArray:
+  Enabled: true
+  Exclude:
+    - Rakefile
+
+Lint/ConstantDefinitionInBlock:
+  Enabled: true
+  Exclude:
+    - Rakefile
+
+Layout/MultilineMethodCallIndentation:
+  Enabled: true
+  EnforcedStyle: indented
+
+Lint/NonDeterministicRequireOrder:
+  Enabled: true
+  Exclude:
+    - init.rb
