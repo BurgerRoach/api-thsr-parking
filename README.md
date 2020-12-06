@@ -1,106 +1,51 @@
-# Taiwan High Speed Rail (THSR) real-time parking space enquiry service
+# API of Taiwan High Speed Rail (THSR) real-time parking space enquiry service 
 
-This is a real time inquiry service for Taiwan High Speed Rail (HSR) parking spaces. 
+These are the APIs of the real time inquiry service for Taiwan High Speed Rail (HSR) parking spaces. 
 
-Although it is just a small program, it should save the life of THSRers!
+## Restful API
 
-## Domain Language
+- v1URL = https://thsr-parking-api.herokuapp.com/api/v1
 
-**AvailableSpaces** (Domain) → **service_available_level** (Language)
+- Status code
 
-## Status
+  | Status Code | Description         |
+  | ----------- | ------------------- |
+  | 200         | OK                  |
+  | 400         | Bad Request         |
+  | 404         | Not Found           |
+  | 503         | Service Unavailable |
 
-[![Ruby v2.7.1](https://img.shields.io/badge/Ruby-2.7.1-green)](https://www.ruby-lang.org/en/news/2020/03/31/ruby-2-7-1-released/)
+- CityAPI
 
-## Requirements
-
-* JSON
-* Minitest
-
-## Get Started
-
-* #### Test 
-
-```bash
-rake spec
-```
-
-* #### Call API
-
-Create an object to receive API data.
-
-```ruby
-api = THSR::Api.new
-```
-
-* #### Search all park
-
-```ruby
-data = api.search
-```
-
-
-Part of return : 
-
-```ruby
-{"UpdateTime"=>"2020-10-16T19:13:57+08:00", "ParkingAvailabilities"=>[{"CarParkID"=>"2100", "CarParkName"=>"高鐵桃園站戶外短期停車場(P1)", "TotalSpaces"=>46, "AvailableSpaces"=>30, "ServiceStatus"=>1, "FullStatus"=>0, "ChargeStatus"=>1, "DataCollectTime"=>"2020-10-16T19:13:12+08:00"}, {"CarParkID"=>"2200", "CarParkName"=>"高鐵桃園站戶外短期停車場(P2)", "TotalSpaces"=>55, "AvailableSpaces"=>18, "ServiceStatus"=>1, "FullStatus"=>0, "ChargeStatus"=>1, "DataCollectTime"=>"2020-10-16T19:13:12+08:00"},...]}
-```
-
-* #### Search park by option
-
-```ruby
-opts = {
-  'service_status': 1,
-  'service_available_level': 60,
-  'charge_status': 1
-}
-data = api.search(opts)
-```
-
-`service_status` : Parking lot business status: [0:'Closed', 1:'Opening', 2:'Closed']
-
-`service_available_level` : Vacancy remain
-
-`charge_status` : Parking charge status: [0:'No charge', 1:'Normal charge', 2:'Suspended charge']
-
-
-* #### Search park by City
-
-```ruby
-city = '苗栗'
-park = api.search_by_city(city)
-```
-
-Return wii be like:
-
-```ruby
-{"UpdateTime"=>"2020-10-17T16:06:57+08:00", "ParkingAvailabilities"=>[{"CarParkID"=>"2500", "CarParkName"=>"高鐵苗栗站戶外平面停車場(P1)", "TotalSpaces"=>449, "AvailableSpaces"=>290, "ServiceStatus"=>1, "FullStatus"=>0, "ChargeStatus"=>1, "DataCollectTime"=>"2020-10-17T16:06:12+08:00"}]}
-```
-
-* #### Search park by Park_ID
-
-```ruby
-park = api.search_by_park_id(id)
-```
-
-Return wii be like:
-
-```ruby
-{"UpdateTime"=>"2020-10-16T19:13:57+08:00", "CarParkID"=>"2500", "CarParkName"=>"高鐵苗栗站戶外平面停車場(P1)", "TotalSpaces"=>449, "AvailableSpaces"=>327, "ServiceStatus"=>1, "FullStatus"=>0, "ChargeStatus"=>1, "DataCollectTime"=>"2020-10-16T19:13:12+08:00"}
-```
-
-## Document
-
-*class* Api
-
-* `search(option)`
-  * option *hash*: Your condiition
-
-* `search_by_city(city)`
-  * city name: must be string
-
-* `search_by_park_id(id)`
-  * id *string* : it must be a 4-digit string
+  | API Method | API URL                 | Desc                       | Req Params | Resp Result                        |
+  | ---------- | ----------------------- | -------------------------- | ---------- | ---------------------------------- |
+  | GET        | v1URL/cities            | List all cities info       |            |                                    |
+  | GET        | v1URL/cities?city_name= | Get city info by City Name | City Name  | City_id, name, latitude, longitude |
+  | GET        | v1URL/cities?city_id=   | Get city info by City ID   | City ID    | City_id, name, latitude, longitude |
+  
+  - Success Response
+  
+    - url:  https://thsr-parking-api.herokuapp.com/api/v1/cities
+  
+    - Code: 200
+  
+    - Content: 
+  
+      ```json
+      {
+        "cities":[
+          {"city_id":"1","name":"桃園","latitude":"25.01309","longitude":"121.2152"},
+          {"city_id":"2","name":"新竹","latitude":"24.80806","longitude":"121.0404"},
+          {"city_id":"3","name":"苗栗","latitude":"24.60851","longitude":"120.8269"},
+          {"city_id":"4","name":"台中","latitude":"24.11365","longitude":"120.6157"},
+          {"city_id":"5","name":"彰化","latitude":"23.87432","longitude":"120.5724"},
+          {"city_id":"6","name":"雲林","latitude":"23.73628","longitude":"120.4143"},
+          {"city_id":"7","name":"嘉義","latitude":"23.45551","longitude":"120.3229"},
+          {"city_id":"8","name":"台南","latitude":"22.92564","longitude":"120.2863"},
+          {"city_id":"9","name":"高雄","latitude":"22.67709","longitude":"120.3074"}
+      	]
+      }
+      ```
 
 ## License
 
