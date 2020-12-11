@@ -34,6 +34,23 @@ module THSRParking
         multi_park_instance
       end
 
+      def find_one_by_id(park_id)
+        @data = THSR::Api.new.search.parse
+
+        result = nil
+        @data['ParkingAvailabilities'].each do |item|
+          if item['CarParkID'] == park_id
+            park_info = Database::ParkOrm.first(park_origin_id: item['CarParkID'])
+            item['latitude'] = park_info.latitude
+            item['longitude'] = park_info.longitude
+            result = DataMapper.new(item).build_entity
+            break
+          end
+        end
+
+        result
+      end
+
       private
 
       def filter_by_options
