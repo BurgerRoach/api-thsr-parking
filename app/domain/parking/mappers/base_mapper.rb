@@ -22,6 +22,11 @@ module THSRParking
         )
 
         @data['ParkingAvailabilities'].each do |item|
+          # find park's position
+          park_info = Database::ParkOrm.first(park_origin_id: item['CarParkID'])
+          item['latitude'] = park_info.latitude
+          item['longitude'] = park_info.longitude
+
           multi_park_instance.parks.append(DataMapper.new(item).build_entity)
         end
 
@@ -59,6 +64,8 @@ module THSRParking
           THSRParking::Entity::SinglePark.new(
             id: @data['CarParkID'],
             name: @data['CarParkName']['Zh_tw'],
+            latitude: @data['latitude'],
+            longitude: @data['longitude'],
             total_spaces: @data['TotalSpaces'],
             available_spaces: @data['AvailableSpaces'],
             service_status: @data['ServiceStatus'],

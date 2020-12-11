@@ -13,7 +13,7 @@ module THSRParking
 
       def nearby_search(lat, lng, radius, type)
         # @params lat {string} latitude
-        # @params lng {string} longtitude
+        # @params lng {string} longitude
         # @params radius {string} search radius
         # @params type {string} type of location e.g. restaurant
         Request.new(@api_key).nearby_search(lat, lng, radius, type)
@@ -36,7 +36,7 @@ module THSRParking
         end
 
         def join_parameters(lat, lng, radius, type)
-          "#{API_URL}?location=#{lat},#{lng}&radius=#{radius}&type=#{type}&key=#{@api_key}"
+          "#{API_URL}?location=#{lat},#{lng}&radius=#{radius}&type=#{type}&language=zh-TW&key=#{@api_key}"
         end
       end
 

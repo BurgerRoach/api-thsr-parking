@@ -12,7 +12,7 @@ module THSRParking
       attribute :id,                  Strict::String
       attribute :name,                Strict::String
       attribute :latitude,            Strict::String
-      attribute :longtitude,          Strict::String
+      attribute :longitude,          Strict::String
       attribute :open_status,         Strict::Bool
       attribute :vicinity,            Strict::String
       attribute :rating,              Strict::String

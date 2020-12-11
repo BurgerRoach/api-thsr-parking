@@ -31,7 +31,7 @@ module THSRParking
             id: @data['place_id'],
             name: @data['name'],
             latitude: @data['geometry']['location']['lat'].to_s,
-            longtitude: @data['geometry']['location']['lng'].to_s,
+            longitude: @data['geometry']['location']['lng'].to_s,
             open_status: @data.key?('opening_hours') ? @data['opening_hours']['open_now'] : false,
             vicinity: @data['vicinity'],
             rating: @data['rating'].to_s,

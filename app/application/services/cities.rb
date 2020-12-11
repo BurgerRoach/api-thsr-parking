@@ -14,31 +14,33 @@ module THSRParking
 
         Success(Response::ApiResult.new(status: :ok, message: cities))
       rescue StandardError => e
-        Failure(
-          Response::ApiResult.new(status: :internal_error, message: e)
-        )
+        Failure(Response::ApiResult.new(status: :internal_error, message: e))
       end
 
       def find_by_name(name)
-        city = Repository::Cities.find_by_name(name)
-        city = Response::City.new(city)
+        data = Repository::Cities.find_by_name(name)
 
-        Success(Response::ApiResult.new(status: :ok, message: city))
+        if data
+          data = Response::City.new(data)
+          Success(Response::ApiResult.new(status: :ok, message: data))
+        else
+          Failure(Response::ApiResult.new(status: :not_found, message: 'City not found'))
+        end
       rescue StandardError => e
-        Failure(
-          Response::ApiResult.new(status: :internal_error, message: e)
-        )
+        Failure(Response::ApiResult.new(status: :internal_error, message: e))
       end
 
       def find_by_id(id)
-        city = Repository::Cities.find_by_id(id)
-        city = Response::City.new(city)
+        data = Repository::Cities.find_by_id(id)
 
-        Success(Response::ApiResult.new(status: :ok, message: city))
+        if data
+          data = Response::City.new(data)
+          Success(Response::ApiResult.new(status: :ok, message: data))
+        else
+          Failure(Response::ApiResult.new(status: :not_found, message: 'City not found'))
+        end
       rescue StandardError => e
-        Failure(
-          Response::ApiResult.new(status: :internal_error, message: e)
-        )
+        Failure(Response::ApiResult.new(status: :internal_error, message: e))
       end
     end
   end

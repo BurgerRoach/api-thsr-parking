@@ -12,6 +12,8 @@ module THSRParking
       # attribute :update_time,       Strict::String.optional
       attribute :id,                Strict::String
       attribute :name,              Strict::String
+      attribute :latitude,          Strict::String
+      attribute :longitude,         Strict::String
       attribute :total_spaces,      Strict::Integer
       attribute :available_spaces,  Strict::Integer
       attribute :service_status,    Strict::Integer

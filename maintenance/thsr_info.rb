@@ -30,7 +30,7 @@ def refactor_park(parks,city)
       name: item.name,
       city: city,
       latitude: item.latitude,
-      longtitude: item.longtitude
+      longitude: item.longitude
     }
   end
 end
@@ -45,7 +45,7 @@ data = []
 # parks = api_google.nearby_search(city[0][:latitude], city[0][:longitude], radius, type)
 # data.push(refactor_park(parks,city[0][:city]))
 city.each do |item|
-  parks = api_google.nearby_search(item[:latitude], item[:longtitude], radius, type)
+  parks = api_google.nearby_search(item[:latitude], item[:longitude], radius, type)
   data.push(*refactor_park(parks,item[:city]))
 end
 File.write('parks-1.yml', data.to_yaml)

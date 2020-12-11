@@ -48,7 +48,7 @@ module THSRParking
                 case q_key
                 when 'city_name' # GET /cities?city_name={name}
                   result = Service::Cities.new.find_by_name(q_value)
-                when 'city_id' # GET /cities?city_id=={id}
+                when 'city_id' # GET /cities?city_id={id}
                   result = Service::Cities.new.find_by_id(q_value)
                 end
 
@@ -61,6 +61,69 @@ module THSRParking
                 response.status = http_response.http_status_code
                 Representer::CityResult.new(result.value!.message).to_json
               end
+            end
+          end
+        end
+
+        routing.on 'parks' do
+          routing.is do
+            routing.get do
+              q_key, q_value = Request::CityQueryParser.new(routing.params).parse.value!
+
+              case q_key
+              when 'city_name' # GET /parks?city_name={name}
+                result = Service::Parks.new.find_by_city_name(q_value)
+              end
+
+              if result.failure?
+                failed = Representer::HttpResponse.new(result.failure)
+                routing.halt failed.http_status_code, failed.to_json
+              end
+
+              http_response = Representer::HttpResponse.new(result.value!)
+              response.status = http_response.http_status_code
+              Representer::ParksList.new(result.value!.message).to_json
+            end
+          end
+
+          routing.on String do |park_id|
+            # GET /parks/{park_id}
+            routing.get do
+              result = Service::Parks.new.find_one_by_park_id(park_id)
+
+              if result.failure?
+                failed = Representer::HttpResponse.new(result.failure)
+                routing.halt failed.http_status_code, failed.to_json
+              end
+
+              http_response = Representer::HttpResponse.new(result.value!)
+              response.status = http_response.http_status_code
+              Representer::ParkResult.new(result.value!.message).to_json
+            end
+          end
+        end
+
+        routing.on 'restaurants' do
+          routing.on String do |park_id|
+            # GET /restaurants/{park_id}?radius={500}
+            routing.get do
+              radius = routing.params['radius'] || '500'
+              type = 'restaurant'
+
+              result = Service::RestaurantAround.new.call({
+                park_id: park_id,
+                radius: radius,
+                type: type
+              })
+
+              if result.failure?
+                failed = Representer::HttpResponse.new(result.failure)
+                routing.halt failed.http_status_code, failed.to_json
+              end
+
+              http_response = Representer::HttpResponse.new(result.value!)
+              response.status = http_response.http_status_code
+              Representer::RestaurantsList.new(result.value!.message).to_json
             end
           end
         end
