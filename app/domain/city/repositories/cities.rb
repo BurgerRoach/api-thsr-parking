@@ -25,7 +25,9 @@ module THSRParking
           city_id: db_record.city_id,
           name: db_record.name,
           latitude: db_record.latitude,
-          longitude: db_record.longitude
+          longitude: db_record.longitude,
+          img_src: db_record.img_src,
+          credit: db_record.credit
         )
       end
     end

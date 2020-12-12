@@ -16,6 +16,8 @@ module THSRParking
       property :name
       property :latitude
       property :longitude
+      property :img_src
+      property :credit
     end
   end
 end

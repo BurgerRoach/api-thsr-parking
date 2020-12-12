@@ -11,6 +11,8 @@ Sequel.migration do
       String      :name, null: false
       String      :latitude, null: false
       String      :longitude, null: false
+      String      :img_src
+      String      :credit
       DateTime    :created_at
       DateTime    :updated_at
     end
