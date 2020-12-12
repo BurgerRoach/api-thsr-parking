@@ -19,6 +19,19 @@ Rake::TestTask.new(:spec_accept) do |t|
   t.pattern = 'spec/tests_acceptance/*_acceptance.rb'
   t.warning = false
 end
+
+namespace :run do
+  desc 'Run API in dev mode'
+  task :dev do
+    sh 'rerun -c "rackup -p 9090"'
+  end
+
+  desc 'Run API in test mode'
+  task :test do
+    sh 'RACK_ENV=test rackup -p 9090'
+  end
+end
+
 # task :home_spec do
 #   puts 'NOTE: run `rake run:test` in another process'
 #   sh 'ruby spec/tests_acceptance/home_page_acceptance.rb'
