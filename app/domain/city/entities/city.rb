@@ -13,6 +13,8 @@ module THSRParking
       attribute :name,              Strict::String
       attribute :latitude,          Strict::String
       attribute :longitude,         Strict::String
+      attribute :img_src,           Strict::String
+      attribute :credit,            Strict::String
     end
   end
 end
