@@ -8,11 +8,11 @@ require_relative '../helpers/vcr_helper'
 require_relative '../helpers/database_helper'
 
 describe 'Tests THSRParking database' do
-  describe 'Search station information by station id' do
+  describe 'Search city information by city name' do
     it 'HAPPY: should provide correct search information' do
-      result = THSRParking::RestaurantHunter::Stations.find_station_by_id('1')
-      puts result.to_h
-      _(result.to_h[:station]).must_equal '高鐵桃園站'
+      result = THSRParking::Repository::Cities.find_by_name('桃園')
+      puts result
+      _(result[:city_id]).must_equal '1'
     end
   end
 end
