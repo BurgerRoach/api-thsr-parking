@@ -63,29 +63,29 @@ module THSRParking
               end
             end
           end
+
+          routing.on String do |city_id|
+            routing.on 'parks' do
+              routing.is do
+                # GET /cites/{city_id}/parks
+                routing.get do
+                  result = Service::Parks.new.find_by_city_id(city_id)
+
+                  if result.failure?
+                    failed = Representer::HttpResponse.new(result.failure)
+                    routing.halt failed.http_status_code, failed.to_json
+                  end
+
+                  http_response = Representer::HttpResponse.new(result.value!)
+                  response.status = http_response.http_status_code
+                  Representer::ParksList.new(result.value!.message).to_json
+                end
+              end
+            end
+          end
         end
 
         routing.on 'parks' do
-          routing.is do
-            routing.get do
-              q_key, q_value = Request::CityQueryParser.new(routing.params).parse.value!
-
-              case q_key
-              when 'city_name' # GET /parks?city_name={name}
-                result = Service::Parks.new.find_by_city_name(q_value)
-              end
-
-              if result.failure?
-                failed = Representer::HttpResponse.new(result.failure)
-                routing.halt failed.http_status_code, failed.to_json
-              end
-
-              http_response = Representer::HttpResponse.new(result.value!)
-              response.status = http_response.http_status_code
-              Representer::ParksList.new(result.value!.message).to_json
-            end
-          end
-
           routing.on String do |park_id|
             # GET /parks/{park_id}
             routing.get do

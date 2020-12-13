@@ -14,6 +14,8 @@ module THSRParking
 
       property :id
       property :name
+      property :city_id
+      property :city
       property :latitude
       property :longitude
       property :total_spaces

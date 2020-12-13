@@ -14,23 +14,45 @@ module THSRParking
         @options = options
       end
 
-      def flatten
+      # def flatten
+      #   @data = THSR::Api.new.search.parse
+
+      #   multi_park_instance = THSRParking::Entity::MultiPark.new(
+      #     update_time: @data['UpdateTime'], parks: []
+      #   )
+
+      #   @data['ParkingAvailabilities'].each do |item|
+      #     # find park's position
+      #     park_info = Database::ParkOrm.first(park_origin_id: item['CarParkID'])
+      #     item['latitude'] = park_info.latitude
+      #     item['longitude'] = park_info.longitude
+
+      #     multi_park_instance.parks.append(DataMapper.new(item).build_entity)
+      #   end
+
+      #   filter_by_options if @options
+      #   multi_park_instance
+      # end
+
+      def find_by_city_id(city_id)
         @data = THSR::Api.new.search.parse
 
         multi_park_instance = THSRParking::Entity::MultiPark.new(
           update_time: @data['UpdateTime'], parks: []
         )
 
+        # result = []
         @data['ParkingAvailabilities'].each do |item|
-          # find park's position
           park_info = Database::ParkOrm.first(park_origin_id: item['CarParkID'])
-          item['latitude'] = park_info.latitude
-          item['longitude'] = park_info.longitude
-
-          multi_park_instance.parks.append(DataMapper.new(item).build_entity)
+          if park_info.city_id == city_id
+            item['city_id'] = park_info.city_id
+            item['city'] = park_info.city
+            item['latitude'] = park_info.latitude
+            item['longitude'] = park_info.longitude
+            multi_park_instance.parks.push(DataMapper.new(item).build_entity)
+          end
         end
 
-        filter_by_options if @options
         multi_park_instance
       end
 
@@ -41,6 +63,8 @@ module THSRParking
         @data['ParkingAvailabilities'].each do |item|
           if item['CarParkID'] == park_id
             park_info = Database::ParkOrm.first(park_origin_id: item['CarParkID'])
+            item['city_id'] = park_info.city_id
+            item['city'] = park_info.city
             item['latitude'] = park_info.latitude
             item['longitude'] = park_info.longitude
             result = DataMapper.new(item).build_entity
@@ -81,6 +105,8 @@ module THSRParking
           THSRParking::Entity::SinglePark.new(
             id: @data['CarParkID'],
             name: @data['CarParkName']['Zh_tw'],
+            city_id: @data['city_id'],
+            city: @data['city'],
             latitude: @data['latitude'],
             longitude: @data['longitude'],
             total_spaces: @data['TotalSpaces'],
