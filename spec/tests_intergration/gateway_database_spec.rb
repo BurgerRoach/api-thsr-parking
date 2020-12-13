@@ -17,8 +17,6 @@ describe 'Tests THSRParking database' do
   end
 end
 
-
-
 # describe 'Integration Tests of Github API and Database' do
 #   VcrHelper.setup_vcr
 #   DatabaseHelper.setup_database_cleaner
