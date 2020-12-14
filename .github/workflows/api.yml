@@ -38,7 +38,7 @@ jobs:
       - name: Setup test database
         env:
           SESSION_SECRET: ${{ secrets.SESSION_SECRET }}
-        run: RACK_ENV=test rake db:migrate
+        run: RACK_ENV=test bundle exec rake db:migrate
 
       # - name: Run all specs
       #   env: # define secrets in Github project -> settings -> secrets
