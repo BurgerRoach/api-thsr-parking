@@ -35,12 +35,12 @@ jobs:
         with:
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
 
-      - name: Setup test database
-        env:
-          SESSION_SECRET: ${{ secrets.SESSION_SECRET }}
-        run: RACK_ENV=test bundle exec rake db:migrate
+      # - name: Setup test database
+      #   env:
+      #     SESSION_SECRET: ${{ secrets.SESSION_SECRET }}
+      #   run: RACK_ENV=test bundle exec rake db:migrate
 
-      # - name: Run all specs
-      #   env: # define secrets in Github project -> settings -> secrets
-      #     API_KEY: ${{ secrets.GMAP_TOKEN }}
-      #   run: ruby spec/test_unit/gateway_api_spec.rb
+      - name: Run all specs
+        env: # define secrets in Github project -> settings -> secrets
+          API_KEY: ${{ secrets.GMAP_TOKEN }}
+        run: ruby spec/test_unit/gateway_api_spec.rb
