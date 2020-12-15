@@ -12,7 +12,7 @@ module THSRParking
       include Roar::JSON
 
       property :update_time
-      collection :parks, extend: Representer::Park
+      collection :parks, extend: Representer::Park,class: OpenStruct
     end
   end
 end
