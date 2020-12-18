@@ -107,7 +107,6 @@ GEM
     i18n (1.8.5)
       concurrent-ruby (~> 1.0)
     ice_nine (0.11.2)
-    iconv (1.0.8)
     json (2.3.1)
     kwalify (0.7.2)
     listen (3.3.1)
@@ -211,7 +210,6 @@ DEPENDENCIES
   hirb
   hirb-unicode
   http (~> 4.0)
-  iconv
   json
   minitest (~> 5.0)
   minitest-rg (~> 5.0)
