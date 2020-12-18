@@ -107,6 +107,7 @@ GEM
     i18n (1.8.5)
       concurrent-ruby (~> 1.0)
     ice_nine (0.11.2)
+    iconv (1.0.8)
     json (2.3.1)
     kwalify (0.7.2)
     listen (3.3.1)
@@ -131,6 +132,8 @@ GEM
     public_suffix (4.0.6)
     puma (3.12.6)
     rack (2.2.3)
+    rack-test (1.1.0)
+      rack (>= 1.0, < 3)
     rainbow (2.2.2)
       rake
     rake (13.0.1)
@@ -169,6 +172,8 @@ GEM
       rubyzip (>= 1.2.2)
     sequel (5.38.0)
     sexp_processor (4.15.1)
+      docile (~> 1.1)
+      simplecov-html (~> 0.11)
     simplecov (0.19.1)
       docile (~> 1.1)
       simplecov-html (~> 0.11)
@@ -206,6 +211,7 @@ DEPENDENCIES
   hirb
   hirb-unicode
   http (~> 4.0)
+  iconv
   json
   minitest (~> 5.0)
   minitest-rg (~> 5.0)
@@ -214,6 +220,7 @@ DEPENDENCIES
   pg
   puma (~> 3.11)
   rack (~> 2)
+  rack-test
   rake
   reek
   rerun (~> 0.13)

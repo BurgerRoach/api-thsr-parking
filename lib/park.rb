@@ -1,37 +1,38 @@
 # frozen_string_literal: true
+module THSRParking
+  module THSR
+    # Model for park
+    class Park
+      def initialize(park_id, filtered_data)
+        @data = filtered_data
+        @park_id = park_id
+      end
 
-module THSR
-  # Model for park
-  class Park
-    def initialize(park_id, filtered_data)
-      @data = filtered_data
-      @park_id = park_id
-    end
+      def onehash
+        [@data.first].to_h.merge(@data['ParkingAvailabilities'].inject(:merge)) # Transform into one hash
+      end
 
-    def onehash
-      [@data.first].to_h.merge(@data['ParkingAvailabilities'].inject(:merge)) # Transform into one hash
-    end
+      def find_id
+        @data['ParkingAvailabilities'].select! { |item| item['CarParkID'] == @park_id }
+      end
 
-    def find_id
-      @data['ParkingAvailabilities'].select! { |item| item['CarParkID'] == @park_id }
-    end
+      def get
+        raise Errors::IDFormatError if invalid_id_format?
 
-    def get
-      raise Errors::IDFormatError if invalid_id_format?
+        find_id
+        return onehash if @data['ParkingAvailabilities'][0]
 
-      find_id
-      return onehash if @data['ParkingAvailabilities'][0]
+        nil # 'Sorry, no parking lot can meet your needs'
+      end
 
-      nil # 'Sorry, no parking lot can meet your needs'
-    end
+      private
 
-    private
+      def invalid_id_format?
+        id_format = /^\d{4}$/
+        return true unless id_format.match(@park_id)
 
-    def invalid_id_format?
-      id_format = /^\d{4}$/
-      return true unless id_format.match(@park_id)
-
-      false
+        false
+      end
     end
   end
 end

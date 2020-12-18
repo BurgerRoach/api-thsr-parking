@@ -8,7 +8,6 @@ class VcrHelper
   CASSETTES_FOLDER = 'spec/fixtures/cassettes/'.freeze
   THSR_CASSETTE = 'thsr_api'.freeze
 
-
   def self.setup_vcr
     VCR.configure do |c|
       c.cassette_library_dir = CASSETTES_FOLDER

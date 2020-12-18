@@ -14,7 +14,7 @@ module THSRParking
       #   # @params city {string} city name
       #   # @params options {hash}
       #   # @return {array-hash} the response data after filtered by city name
-      #   filtered_data = search(options, 'dry')
+      #   filtered_data = Request.new.get
       #   THSR::City.new(filtered_data, city).get
       #   # JSON.parse(THSR::City.new(filtered_data, city).get.to_h.to_json)
       # end
@@ -23,11 +23,12 @@ module THSRParking
       #   # @params park_id {int} city name
       #   # @params options {hash}
       #   # @return {hash} the response data after filtered by park id
-      #   filtered_data = search(options, 'dry')
+      #   filtered_data = Request.new.get
       #   THSR::Park.new(filtered_data, park_id).get
       #   # JSON.parse(THSR::Park.new(filtered_data, park_id).get.to_h.to_json)
       # end
 
+      # Request
       class Request
         API_URL = 'https://traffic.transportdata.tw/MOTC/v1/Parking/OffStreet/ParkingAvailability/Rail/THSR?$format=JSON'
 
@@ -39,7 +40,7 @@ module THSRParking
           end
         end
       end
-
+      # Response SimpleDelegator
       class Response < SimpleDelegator
         include Errors
         HTTP_ERROR = {
@@ -56,7 +57,6 @@ module THSRParking
           HTTP_ERROR[code]
         end
       end
-
 
       private
 

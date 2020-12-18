@@ -39,4 +39,1242 @@ http_interactions:
       string: !binary |-
         eyJVcGRhdGVUaW1lIjoiMjAyMC0xMC0yM1QwOTozMTo1NyswODowMCIsIlVwZGF0ZUludGVydmFsIjoxLCJTcmNVcGRhdGVUaW1lIjoiMjAyMC0xMC0yM1QwOTozMToxMiswODowMCIsIlNyY1VwZGF0ZUludGVydmFsIjo2MCwiQXV0aG9yaXR5Q29kZSI6IlRIU1IiLCJQYXJraW5nQXZhaWxhYmlsaXRpZXMiOlt7IkNhclBhcmtJRCI6IjIxMDAiLCJDYXJQYXJrTmFtZSI6eyJaaF90dyI6IumrmOmQteahg+WckuermeaItuWkluefreacn+WBnOi7iuWgtChQMSkifSwiVG90YWxTcGFjZXMiOjQ2LCJBdmFpbGFibGVTcGFjZXMiOjMwLCJBdmFpbGFiaWxpdGllcyI6W3siU3BhY2VUeXBlIjoxLCJOdW1iZXJPZlNwYWNlcyI6IjQ2IiwiQXZhaWxhYmxlU3BhY2VzIjoiMzAifV0sIlNlcnZpY2VTdGF0dXMiOjEsIkZ1bGxTdGF0dXMiOjAsIkNoYXJnZVN0YXR1cyI6MSwiRGF0YUNvbGxlY3RUaW1lIjoiMjAyMC0xMC0yM1QwOTozMToxMiswODowMCJ9LHsiQ2FyUGFya0lEIjoiMjIwMCIsIkNhclBhcmtOYW1lIjp7IlpoX3R3Ijoi6auY6ZC15qGD5ZyS56uZ5oi25aSW55+t5pyf5YGc6LuK5aC0KFAyKSJ9LCJUb3RhbFNwYWNlcyI6NTUsIkF2YWlsYWJsZVNwYWNlcyI6MTgsIkF2YWlsYWJpbGl0aWVzIjpbeyJTcGFjZVR5cGUiOjEsIk51bWJlck9mU3BhY2VzIjoiNTUiLCJBdmFpbGFibGVTcGFjZXMiOiIxOCJ9XSwiU2VydmljZVN0YXR1cyI6MSwiRnVsbFN0YXR1cyI6MCwiQ2hhcmdlU3RhdHVzIjoxLCJEYXRhQ29sbGVjdFRpbWUiOiIyMDIwLTEwLTIzVDA5OjMxOjEyKzA4OjAwIn0seyJDYXJQYXJrSUQiOiIyMzAwIiwiQ2FyUGFya05hbWUiOnsiWmhfdHciOiLpq5jpkLXmoYPlnJLnq5nnq4vpq5TlgZzou4rloLQoUDMpIn0sIlRvdGFsU3BhY2VzIjo4NDUsIkF2YWlsYWJsZVNwYWNlcyI6MjY3LCJBdmFpbGFiaWxpdGllcyI6W3siU3BhY2VUeXBlIjoxLCJOdW1iZXJPZlNwYWNlcyI6Ijg0NSIsIkF2YWlsYWJsZVNwYWNlcyI6IjI2NyJ9XSwiU2VydmljZVN0YXR1cyI6MSwiRnVsbFN0YXR1cyI6MCwiQ2hhcmdlU3RhdHVzIjoxLCJEYXRhQ29sbGVjdFRpbWUiOiIyMDIwLTEwLTIzVDA5OjMxOjEyKzA4OjAwIn0seyJDYXJQYXJrSUQiOiIyNDAwIiwiQ2FyUGFya05hbWUiOnsiWmhfdHciOiLpq5jpkLXmlrDnq7nnq5lQMeaxvei7iuWBnOi7iuWgtCJ9LCJUb3RhbFNwYWNlcyI6MjA2LCJBdmFpbGFibGVTcGFjZXMiOjAsIkF2YWlsYWJpbGl0aWVzIjpbeyJTcGFjZVR5cGUiOjEsIk51bWJlck9mU3BhY2VzIjoiMjA2IiwiQXZhaWxhYmxlU3BhY2VzIjoiMCJ9XSwiU2VydmljZVN0YXR1cyI6MSwiRnVsbFN0YXR1cyI6MiwiQ2hhcmdlU3RhdHVzIjoxLCJEYXRhQ29sbGVjdFRpbWUiOiIyMDIwLTEwLTIzVDA5OjMxOjEyKzA4OjAwIn0seyJDYXJQYXJrSUQiOiIyNTAwIiwiQ2FyUGFya05hbWUiOnsiWmhfdHciOiLpq5jpkLXoi5fmoJfnq5nmiLblpJblubPpnaLlgZzou4rloLQoUDEpIn0sIlRvdGFsU3BhY2VzIjo0NDksIkF2YWlsYWJsZVNwYWNlcyI6MzEyLCJBdmFpbGFiaWxpdGllcyI6W3siU3BhY2VUeXBlIjoxLCJOdW1iZXJPZlNwYWNlcyI6IjQ0OSIsIkF2YWlsYWJsZVNwYWNlcyI6IjMxMiJ9XSwiU2VydmljZVN0YXR1cyI6MSwiRnVsbFN0YXR1cyI6MCwiQ2hhcmdlU3RhdHVzIjoxLCJEYXRhQ29sbGVjdFRpbWUiOiIyMDIwLTEwLTIzVDA5OjMxOjEyKzA4OjAwIn0seyJDYXJQYXJrSUQiOiIyNjAwIiwiQ2FyUGFya05hbWUiOnsiWmhfdHciOiLpq5jpkLXoi5fmoJfnq5nmiLblpJblubPpnaLlgZzou4rloLQoUDIpIn0sIlRvdGFsU3BhY2VzIjo0NDksIkF2YWlsYWJsZVNwYWNlcyI6NCwiQXZhaWxhYmlsaXRpZXMiOlt7IlNwYWNlVHlwZSI6MSwiTnVtYmVyT2ZTcGFjZXMiOiI0NDkiLCJBdmFpbGFibGVTcGFjZXMiOiI0In1dLCJTZXJ2aWNlU3RhdHVzIjoxLCJGdWxsU3RhdHVzIjowLCJDaGFyZ2VTdGF0dXMiOjEsIkRhdGFDb2xsZWN0VGltZSI6IjIwMjAtMTAtMjNUMDk6MzE6MTIrMDg6MDAifSx7IkNhclBhcmtJRCI6IjI3MDAiLCJDYXJQYXJrTmFtZSI6eyJaaF90dyI6IumrmOmQteWPsOS4reermeeri+mrlOWBnOi7iuWgtChQMSkifSwiVG90YWxTcGFjZXMiOjE0ODIsIkF2YWlsYWJsZVNwYWNlcyI6NzY1LCJBdmFpbGFiaWxpdGllcyI6W3siU3BhY2VUeXBlIjoxLCJOdW1iZXJPZlNwYWNlcyI6IjE0ODIiLCJBdmFpbGFibGVTcGFjZXMiOiI3NjUifV0sIlNlcnZpY2VTdGF0dXMiOjEsIkZ1bGxTdGF0dXMiOjAsIkNoYXJnZVN0YXR1cyI6MSwiRGF0YUNvbGxlY3RUaW1lIjoiMjAyMC0xMC0yM1QwOTozMToxMiswODowMCJ9LHsiQ2FyUGFya0lEIjoiMjgwMCIsIkNhclBhcmtOYW1lIjp7IlpoX3R3Ijoi6auY6ZC15Y+w5Lit56uZ6LyJ5a6i5bCI55So5bmz6Z2i5YGc6LuK5aC0KFAyKSJ9LCJUb3RhbFNwYWNlcyI6NTUsIkF2YWlsYWJsZVNwYWNlcyI6OCwiQXZhaWxhYmlsaXRpZXMiOlt7IlNwYWNlVHlwZSI6MSwiTnVtYmVyT2ZTcGFjZXMiOiI1NSIsIkF2YWlsYWJsZVNwYWNlcyI6IjgifV0sIlNlcnZpY2VTdGF0dXMiOjEsIkZ1bGxTdGF0dXMiOjAsIkNoYXJnZVN0YXR1cyI6MSwiRGF0YUNvbGxlY3RUaW1lIjoiMjAyMC0xMC0yM1QwOTozMToxMiswODowMCJ9LHsiQ2FyUGFya0lEIjoiMjkwMCIsIkNhclBhcmtOYW1lIjp7IlpoX3R3Ijoi6auY6ZC15b2w5YyW56uZ5YGc6LuK5aC0In0sIlRvdGFsU3BhY2VzIjo0ODUsIkF2YWlsYWJsZVNwYWNlcyI6NDU3LCJBdmFpbGFiaWxpdGllcyI6W3siU3BhY2VUeXBlIjoxLCJOdW1iZXJPZlNwYWNlcyI6IjQ4NSIsIkF2YWlsYWJsZVNwYWNlcyI6IjQ1NyJ9XSwiU2VydmljZVN0YXR1cyI6MSwiRnVsbFN0YXR1cyI6MCwiQ2hhcmdlU3RhdHVzIjoxLCJEYXRhQ29sbGVjdFRpbWUiOiIyMDIwLTEwLTIzVDA5OjMxOjEyKzA4OjAwIn0seyJDYXJQYXJrSUQiOiIzMDAwIiwiQ2FyUGFya05hbWUiOnsiWmhfdHciOiLpq5jpkLXpm7Lmnpfnq5nlgZzou4rloLQifSwiVG90YWxTcGFjZXMiOjUzMSwiQXZhaWxhYmxlU3BhY2VzIjo0MDgsIkF2YWlsYWJpbGl0aWVzIjpbeyJTcGFjZVR5cGUiOjEsIk51bWJlck9mU3BhY2VzIjoiNTMxIiwiQXZhaWxhYmxlU3BhY2VzIjoiNDA4In1dLCJTZXJ2aWNlU3RhdHVzIjoxLCJGdWxsU3RhdHVzIjowLCJDaGFyZ2VTdGF0dXMiOjEsIkRhdGFDb2xsZWN0VGltZSI6IjIwMjAtMTAtMjNUMDk6MzE6MTIrMDg6MDAifSx7IkNhclBhcmtJRCI6IjMxMDAiLCJDYXJQYXJrTmFtZSI6eyJaaF90dyI6IumrmOmQteWYiee+qeermVAx5rG96LuK5YGc6LuK5aC0In0sIlRvdGFsU3BhY2VzIjoxNDIsIkF2YWlsYWJsZVNwYWNlcyI6MTQyLCJBdmFpbGFiaWxpdGllcyI6W3siU3BhY2VUeXBlIjoxLCJOdW1iZXJPZlNwYWNlcyI6IjE0MiIsIkF2YWlsYWJsZVNwYWNlcyI6IjE0MiJ9XSwiU2VydmljZVN0YXR1cyI6MSwiRnVsbFN0YXR1cyI6MCwiQ2hhcmdlU3RhdHVzIjoxLCJEYXRhQ29sbGVjdFRpbWUiOiIyMDIwLTEwLTIzVDA5OjMxOjEyKzA4OjAwIn0seyJDYXJQYXJrSUQiOiIzMjAwIiwiQ2FyUGFya05hbWUiOnsiWmhfdHciOiLpq5jpkLXlmInnvqnnq5lQMuaxvei7iuWBnOi7iuWgtCJ9LCJUb3RhbFNwYWNlcyI6MTY1LCJBdmFpbGFibGVTcGFjZXMiOjEwMCwiQXZhaWxhYmlsaXRpZXMiOlt7IlNwYWNlVHlwZSI6MSwiTnVtYmVyT2ZTcGFjZXMiOiIxNjUiLCJBdmFpbGFibGVTcGFjZXMiOiIxMDAifV0sIlNlcnZpY2VTdGF0dXMiOjEsIkZ1bGxTdGF0dXMiOjAsIkNoYXJnZVN0YXR1cyI6MSwiRGF0YUNvbGxlY3RUaW1lIjoiMjAyMC0xMC0yM1QwOTozMToxMiswODowMCJ9LHsiQ2FyUGFya0lEIjoiMzMwMCIsIkNhclBhcmtOYW1lIjp7IlpoX3R3Ijoi6auY6ZC15Y+w5Y2X56uZUDHmsb3ou4rlgZzou4rloLQifSwiVG90YWxTcGFjZXMiOjEwOSwiQXZhaWxhYmxlU3BhY2VzIjoxOCwiQXZhaWxhYmlsaXRpZXMiOlt7IlNwYWNlVHlwZSI6MSwiTnVtYmVyT2ZTcGFjZXMiOiIxMDkiLCJBdmFpbGFibGVTcGFjZXMiOiIxOCJ9XSwiU2VydmljZVN0YXR1cyI6MSwiRnVsbFN0YXR1cyI6MCwiQ2hhcmdlU3RhdHVzIjoxLCJEYXRhQ29sbGVjdFRpbWUiOiIyMDIwLTEwLTIzVDA5OjMxOjEyKzA4OjAwIn0seyJDYXJQYXJrSUQiOiIzNDAwIiwiQ2FyUGFya05hbWUiOnsiWmhfdHciOiLpq5jpkLXlj7DljZfnq5lQMuaxvei7iuWBnOi7iuWgtCJ9LCJUb3RhbFNwYWNlcyI6MjQwLCJBdmFpbGFibGVTcGFjZXMiOjE1LCJBdmFpbGFiaWxpdGllcyI6W3siU3BhY2VUeXBlIjoxLCJOdW1iZXJPZlNwYWNlcyI6IjI0MCIsIkF2YWlsYWJsZVNwYWNlcyI6IjE1In1dLCJTZXJ2aWNlU3RhdHVzIjoxLCJGdWxsU3RhdHVzIjowLCJDaGFyZ2VTdGF0dXMiOjEsIkRhdGFDb2xsZWN0VGltZSI6IjIwMjAtMTAtMjNUMDk6MzE6MTIrMDg6MDAifSx7IkNhclBhcmtJRCI6IjM1MDAiLCJDYXJQYXJrTmFtZSI6eyJaaF90dyI6IumrmOmQteWPsOWNl+ermVAz5rG96LuK5YGc6LuK5aC0In0sIlRvdGFsU3BhY2VzIjozMzcsIkF2YWlsYWJsZVNwYWNlcyI6NDUsIkF2YWlsYWJpbGl0aWVzIjpbeyJTcGFjZVR5cGUiOjEsIk51bWJlck9mU3BhY2VzIjoiMzM3IiwiQXZhaWxhYmxlU3BhY2VzIjoiNDUifV0sIlNlcnZpY2VTdGF0dXMiOjEsIkZ1bGxTdGF0dXMiOjAsIkNoYXJnZVN0YXR1cyI6MSwiRGF0YUNvbGxlY3RUaW1lIjoiMjAyMC0xMC0yM1QwOTozMToxMiswODowMCJ9LHsiQ2FyUGFya0lEIjoiMzYwMCIsIkNhclBhcmtOYW1lIjp7IlpoX3R3Ijoi6auY6ZC15bem54ef56uZ5YGc6LuK5aC0In0sIlRvdGFsU3BhY2VzIjo3ODAsIkF2YWlsYWJsZVNwYWNlcyI6MTM4LCJBdmFpbGFiaWxpdGllcyI6W3siU3BhY2VUeXBlIjoxLCJOdW1iZXJPZlNwYWNlcyI6Ijc4MCIsIkF2YWlsYWJsZVNwYWNlcyI6IjEzOCJ9XSwiU2VydmljZVN0YXR1cyI6MSwiRnVsbFN0YXR1cyI6MCwiQ2hhcmdlU3RhdHVzIjoxLCJEYXRhQ29sbGVjdFRpbWUiOiIyMDIwLTEwLTIzVDA5OjMxOjEyKzA4OjAwIn0seyJDYXJQYXJrSUQiOiIzNzAwIiwiQ2FyUGFya05hbWUiOnsiWmhfdHciOiLpq5jpkLXlmInnvqnnq5lQM+axvei7iuWBnOi7iuWgtCJ9LCJUb3RhbFNwYWNlcyI6MjkwLCJBdmFpbGFibGVTcGFjZXMiOjI5MCwiQXZhaWxhYmlsaXRpZXMiOlt7IlNwYWNlVHlwZSI6MSwiTnVtYmVyT2ZTcGFjZXMiOiIyOTAiLCJBdmFpbGFibGVTcGFjZXMiOiIyOTAifV0sIlNlcnZpY2VTdGF0dXMiOjEsIkZ1bGxTdGF0dXMiOjAsIkNoYXJnZVN0YXR1cyI6MSwiRGF0YUNvbGxlY3RUaW1lIjoiMjAyMC0xMC0yM1QwOTozMToxMiswODowMCJ9LHsiQ2FyUGFya0lEIjoiMzgwMCIsIkNhclBhcmtOYW1lIjp7IlpoX3R3Ijoi6auY6ZC15ZiJ576p56uZUDTmsb3ou4rlgZzou4rloLQifSwiVG90YWxTcGFjZXMiOjE1MSwiQXZhaWxhYmxlU3BhY2VzIjoxNTEsIkF2YWlsYWJpbGl0aWVzIjpbeyJTcGFjZVR5cGUiOjEsIk51bWJlck9mU3BhY2VzIjoiMTUxIiwiQXZhaWxhYmxlU3BhY2VzIjoiMTUxIn1dLCJTZXJ2aWNlU3RhdHVzIjoxLCJGdWxsU3RhdHVzIjowLCJDaGFyZ2VTdGF0dXMiOjEsIkRhdGFDb2xsZWN0VGltZSI6IjIwMjAtMTAtMjNUMDk6MzE6MTIrMDg6MDAifSx7IkNhclBhcmtJRCI6IjM5MDAiLCJDYXJQYXJrTmFtZSI6eyJaaF90dyI6IumrmOmQteaWsOerueermVAy5rG96LuK5YGc6LuK5aC0In0sIlRvdGFsU3BhY2VzIjo1MjAsIkF2YWlsYWJsZVNwYWNlcyI6MTU2LCJBdmFpbGFiaWxpdGllcyI6W3siU3BhY2VUeXBlIjoxLCJOdW1iZXJPZlNwYWNlcyI6IjUyMCIsIkF2YWlsYWJsZVNwYWNlcyI6IjE1NiJ9XSwiU2VydmljZVN0YXR1cyI6MSwiRnVsbFN0YXR1cyI6MCwiQ2hhcmdlU3RhdHVzIjoxLCJEYXRhQ29sbGVjdFRpbWUiOiIyMDIwLTEwLTIzVDA5OjMxOjEyKzA4OjAwIn0seyJDYXJQYXJrSUQiOiI0MDAwIiwiQ2FyUGFya05hbWUiOnsiWmhfdHciOiLpq5jpkLXmlrDnq7nnq5lQM+axvei7iuWBnOi7iuWgtCJ9LCJUb3RhbFNwYWNlcyI6ODMsIkF2YWlsYWJsZVNwYWNlcyI6MCwiQXZhaWxhYmlsaXRpZXMiOlt7IlNwYWNlVHlwZSI6MSwiTnVtYmVyT2ZTcGFjZXMiOiI4MyIsIkF2YWlsYWJsZVNwYWNlcyI6IjAifV0sIlNlcnZpY2VTdGF0dXMiOjEsIkZ1bGxTdGF0dXMiOjIsIkNoYXJnZVN0YXR1cyI6MSwiRGF0YUNvbGxlY3RUaW1lIjoiMjAyMC0xMC0yM1QwOTozMToxMiswODowMCJ9XX0=
   recorded_at: Fri, 23 Oct 2020 14:40:21 GMT
+- request:
+    method: get
+    uri: https://traffic.transportdata.tw/MOTC/v1/Parking/OffStreet/ParkingAvailability/Rail/THSR?$format=JSON
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - traffic.transportdata.tw
+      User-Agent:
+      - http.rb/4.4.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 14 Dec 2020 06:50:53 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: '{"UpdateTime":"2020-12-14T14:49:57+08:00","UpdateInterval":-1,"SrcUpdateTime":"2020-12-14T14:49:12+08:00","SrcUpdateInterval":60,"AuthorityCode":"THSR","ParkingAvailabilities":[{"CarParkID":"2100","CarParkName":{"Zh_tw":"高鐵桃園站戶外短期停車場(P1)"},"TotalSpaces":46,"AvailableSpaces":16,"Availabilities":[{"SpaceType":1,"NumberOfSpaces":46,"AvailableSpaces":16}],"ServiceStatus":1,"FullStatus":0,"ChargeStatus":1,"DataCollectTime":"2020-12-14T14:49:12+08:00"},{"CarParkID":"2200","CarParkName":{"Zh_tw":"高鐵桃園站戶外短期停車場(P2)"},"TotalSpaces":55,"AvailableSpaces":17,"Availabilities":[{"SpaceType":1,"NumberOfSpaces":55,"AvailableSpaces":17}],"ServiceStatus":1,"FullStatus":0,"ChargeStatus":1,"DataCollectTime":"2020-12-14T14:49:12+08:00"},{"CarParkID":"2300","CarParkName":{"Zh_tw":"高鐵桃園站立體停車場(P3)"},"TotalSpaces":845,"AvailableSpaces":304,"Availabilities":[{"SpaceType":1,"NumberOfSpaces":845,"AvailableSpaces":304}],"ServiceStatus":1,"FullStatus":0,"ChargeStatus":1,"DataCollectTime":"2020-12-14T14:49:12+08:00"},{"CarParkID":"2400","CarParkName":{"Zh_tw":"高鐵新竹站P1汽車停車場"},"TotalSpaces":206,"AvailableSpaces":9,"Availabilities":[{"SpaceType":1,"NumberOfSpaces":206,"AvailableSpaces":9}],"ServiceStatus":1,"FullStatus":0,"ChargeStatus":1,"DataCollectTime":"2020-12-14T14:49:12+08:00"},{"CarParkID":"2500","CarParkName":{"Zh_tw":"高鐵苗栗站戶外平面停車場(P1)"},"TotalSpaces":449,"AvailableSpaces":329,"Availabilities":[{"SpaceType":1,"NumberOfSpaces":449,"AvailableSpaces":329}],"ServiceStatus":1,"FullStatus":0,"ChargeStatus":1,"DataCollectTime":"2020-12-14T14:49:12+08:00"},{"CarParkID":"2600","CarParkName":{"Zh_tw":"高鐵苗栗站戶外平面停車場(P2)"},"TotalSpaces":449,"AvailableSpaces":13,"Availabilities":[{"SpaceType":1,"NumberOfSpaces":449,"AvailableSpaces":13}],"ServiceStatus":1,"FullStatus":0,"ChargeStatus":1,"DataCollectTime":"2020-12-14T14:49:12+08:00"},{"CarParkID":"2700","CarParkName":{"Zh_tw":"高鐵台中站立體停車場(P1)"},"TotalSpaces":1482,"AvailableSpaces":420,"Availabilities":[{"SpaceType":1,"NumberOfSpaces":1482,"AvailableSpaces":420}],"ServiceStatus":1,"FullStatus":0,"ChargeStatus":1,"DataCollectTime":"2020-12-14T14:49:12+08:00"},{"CarParkID":"2800","CarParkName":{"Zh_tw":"高鐵台中站載客專用平面停車場(P2)"},"TotalSpaces":55,"AvailableSpaces":3,"Availabilities":[{"SpaceType":1,"NumberOfSpaces":55,"AvailableSpaces":3}],"ServiceStatus":1,"FullStatus":0,"ChargeStatus":1,"DataCollectTime":"2020-12-14T14:49:12+08:00"},{"CarParkID":"2900","CarParkName":{"Zh_tw":"高鐵彰化站停車場"},"TotalSpaces":485,"AvailableSpaces":368,"Availabilities":[{"SpaceType":1,"NumberOfSpaces":485,"AvailableSpaces":368}],"ServiceStatus":1,"FullStatus":0,"ChargeStatus":1,"DataCollectTime":"2020-12-14T14:49:12+08:00"},{"CarParkID":"3000","CarParkName":{"Zh_tw":"高鐵雲林站停車場"},"TotalSpaces":531,"AvailableSpaces":531,"Availabilities":[{"SpaceType":1,"NumberOfSpaces":531,"AvailableSpaces":531}],"ServiceStatus":1,"FullStatus":0,"ChargeStatus":1,"DataCollectTime":"2020-12-14T14:49:12+08:00"},{"CarParkID":"3100","CarParkName":{"Zh_tw":"高鐵嘉義站P1汽車停車場"},"TotalSpaces":142,"AvailableSpaces":69,"Availabilities":[{"SpaceType":1,"NumberOfSpaces":142,"AvailableSpaces":69}],"ServiceStatus":1,"FullStatus":0,"ChargeStatus":1,"DataCollectTime":"2020-12-14T14:49:12+08:00"},{"CarParkID":"3200","CarParkName":{"Zh_tw":"高鐵嘉義站P2汽車停車場"},"TotalSpaces":165,"AvailableSpaces":104,"Availabilities":[{"SpaceType":1,"NumberOfSpaces":165,"AvailableSpaces":104}],"ServiceStatus":1,"FullStatus":0,"ChargeStatus":1,"DataCollectTime":"2020-12-14T14:49:12+08:00"},{"CarParkID":"3300","CarParkName":{"Zh_tw":"高鐵台南站P1汽車停車場"},"TotalSpaces":109,"AvailableSpaces":9,"Availabilities":[{"SpaceType":1,"NumberOfSpaces":109,"AvailableSpaces":9}],"ServiceStatus":1,"FullStatus":0,"ChargeStatus":1,"DataCollectTime":"2020-12-14T14:49:12+08:00"},{"CarParkID":"3400","CarParkName":{"Zh_tw":"高鐵台南站P2汽車停車場"},"TotalSpaces":240,"AvailableSpaces":26,"Availabilities":[{"SpaceType":1,"NumberOfSpaces":240,"AvailableSpaces":26}],"ServiceStatus":1,"FullStatus":0,"ChargeStatus":1,"DataCollectTime":"2020-12-14T14:49:12+08:00"},{"CarParkID":"3500","CarParkName":{"Zh_tw":"高鐵台南站P3汽車停車場"},"TotalSpaces":337,"AvailableSpaces":181,"Availabilities":[{"SpaceType":1,"NumberOfSpaces":337,"AvailableSpaces":181}],"ServiceStatus":1,"FullStatus":0,"ChargeStatus":1,"DataCollectTime":"2020-12-14T14:49:12+08:00"},{"CarParkID":"3600","CarParkName":{"Zh_tw":"高鐵左營站停車場"},"TotalSpaces":780,"AvailableSpaces":144,"Availabilities":[{"SpaceType":1,"NumberOfSpaces":780,"AvailableSpaces":144}],"ServiceStatus":1,"FullStatus":0,"ChargeStatus":1,"DataCollectTime":"2020-12-14T14:49:12+08:00"},{"CarParkID":"3700","CarParkName":{"Zh_tw":"高鐵嘉義站P3汽車停車場"},"TotalSpaces":290,"AvailableSpaces":175,"Availabilities":[{"SpaceType":1,"NumberOfSpaces":290,"AvailableSpaces":175}],"ServiceStatus":1,"FullStatus":0,"ChargeStatus":1,"DataCollectTime":"2020-12-14T14:49:12+08:00"},{"CarParkID":"3800","CarParkName":{"Zh_tw":"高鐵嘉義站P4汽車停車場"},"TotalSpaces":151,"AvailableSpaces":116,"Availabilities":[{"SpaceType":1,"NumberOfSpaces":151,"AvailableSpaces":116}],"ServiceStatus":1,"FullStatus":0,"ChargeStatus":1,"DataCollectTime":"2020-12-14T14:49:12+08:00"},{"CarParkID":"3900","CarParkName":{"Zh_tw":"高鐵新竹站P2汽車停車場"},"TotalSpaces":520,"AvailableSpaces":82,"Availabilities":[{"SpaceType":1,"NumberOfSpaces":520,"AvailableSpaces":82}],"ServiceStatus":1,"FullStatus":0,"ChargeStatus":1,"DataCollectTime":"2020-12-14T14:49:12+08:00"},{"CarParkID":"4000","CarParkName":{"Zh_tw":"高鐵新竹站P3汽車停車場"},"TotalSpaces":83,"AvailableSpaces":0,"Availabilities":[{"SpaceType":1,"NumberOfSpaces":83,"AvailableSpaces":0}],"ServiceStatus":1,"FullStatus":2,"ChargeStatus":1,"DataCollectTime":"2020-12-14T14:49:12+08:00"}]}'
+  recorded_at: Mon, 14 Dec 2020 06:50:53 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyCKFRjdZEMng_7iZGdqpVZTBnmQ2pkbans&language=zh-TW&location=24.8063576,121.0399247&radius=200&type=restaurant
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - maps.googleapis.com
+      User-Agent:
+      - http.rb/4.4.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 18 Dec 2020 06:12:02 GMT
+      Expires:
+      - Fri, 18 Dec 2020 06:17:02 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=100
+      Cache-Control:
+      - public, max-age=300
+      Age:
+      - '176'
+      Alt-Svc:
+      - h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Accept-Ranges:
+      - none
+      Vary:
+      - Accept-Encoding
+      Connection:
+      - close
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "html_attributions" : [],
+           "results" : [
+              {
+                 "business_status" : "OPERATIONAL",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 24.807997,
+                       "lng" : 121.0398063
+                    },
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 24.8093459802915,
+                          "lng" : 121.0411552802915
+                       },
+                       "southwest" : {
+                          "lat" : 24.8066480197085,
+                          "lng" : 121.0384573197085
+                       }
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+                 "name" : "摩斯漢堡 高鐵新竹店",
+                 "opening_hours" : {
+                    "open_now" : true
+                 },
+                 "photos" : [
+                    {
+                       "height" : 3264,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/106596031662182807626\"\u003echun-hao Chang\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "ATtYBwLBNZgsnrWUNiYhpaMu77BHVjy6mkwknbq2xsBv7T7PgjViP3VhxBjmTjm6LHODWUb1_bC3FnycmTYooM_RUPpPoI0cQbrzTReTQg2LK5tZE80-pgx8rdsU_eDSa3XLdCUsz04HWn0hAk2gdL8HMYTLL4GihnfQbBH5flSthjEAiKM3",
+                       "width" : 4928
+                    }
+                 ],
+                 "place_id" : "ChIJp0qcWwc3aDQRPjTN84cnRWY",
+                 "plus_code" : {
+                    "compound_code" : "R25Q+5W 台灣新竹縣竹北市",
+                    "global_code" : "7QP3R25Q+5W"
+                 },
+                 "price_level" : 2,
+                 "rating" : 3.5,
+                 "reference" : "ChIJp0qcWwc3aDQRPjTN84cnRWY",
+                 "scope" : "GOOGLE",
+                 "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+                 "user_ratings_total" : 604,
+                 "vicinity" : "竹北市高鐵七路6號"
+              },
+              {
+                 "business_status" : "CLOSED_TEMPORARILY",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 24.8080601,
+                       "lng" : 121.0404152
+                    },
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 24.8093430302915,
+                          "lng" : 121.0418581302915
+                       },
+                       "southwest" : {
+                          "lat" : 24.8066450697085,
+                          "lng" : 121.0391601697085
+                       }
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+                 "name" : "CoCo壹番屋 新竹高鐵店",
+                 "permanently_closed" : true,
+                 "photos" : [
+                    {
+                       "height" : 3024,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/109091154366455188982\"\u003eCoCo壹番屋 新竹高鐵店\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "ATtYBwIKUGTDsYOjga79s4qOIpoE6DzhOT7G6ZOJtZ9PrVGtWw6LVsNRLimviYmr7lJrVV8yn7xg2ZAD8J9E6-RmkMz-GVsie8zsR9DWyXmo8AL-KSlZxWh1ZK347hOtqcixUwlo1bqu7ufF63GcOK3vGk5ndbGD1NYWwzKIQbL28L0IUvod",
+                       "width" : 4032
+                    }
+                 ],
+                 "place_id" : "ChIJBT_Tf6w3aDQRG7gh9N19AJ4",
+                 "plus_code" : {
+                    "compound_code" : "R25R+65 台灣新竹縣竹北市",
+                    "global_code" : "7QP3R25R+65"
+                 },
+                 "price_level" : 2,
+                 "reference" : "ChIJBT_Tf6w3aDQRG7gh9N19AJ4",
+                 "scope" : "GOOGLE",
+                 "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+                 "vicinity" : "竹北市高鐵七路6號"
+              },
+              {
+                 "business_status" : "OPERATIONAL",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 24.8080601,
+                       "lng" : 121.0404152
+                    },
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 24.8094763802915,
+                          "lng" : 121.0419320802915
+                       },
+                       "southwest" : {
+                          "lat" : 24.8067784197085,
+                          "lng" : 121.0392341197085
+                       }
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+                 "name" : "爭鮮 GOGO -新竹高鐵店",
+                 "opening_hours" : {
+                    "open_now" : true
+                 },
+                 "photos" : [
+                    {
+                       "height" : 960,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/104251940057324103010\"\u003e爭鮮外帶-新竹高鐵店\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "ATtYBwJr6pno8jGvTcqcFTUYNdhXei5Ugg0RdpDGkR6l236BPNeo22hpka1K-w0A5i_SYCnujXhdZMpJRU2IFANTUsphGAvWKqpaYscNiA4Hch5flM5Ueme4ZXeBwipu2pL_rE1UE5-Gznf3ryAvY-JvJCl3LRPu9AQi8K-wWCQmoHg1B1uu",
+                       "width" : 1280
+                    }
+                 ],
+                 "place_id" : "ChIJd026Vf03aDQRroReLDoZVOs",
+                 "plus_code" : {
+                    "compound_code" : "R25R+65 台灣新竹縣竹北市",
+                    "global_code" : "7QP3R25R+65"
+                 },
+                 "rating" : 2.6,
+                 "reference" : "ChIJd026Vf03aDQRroReLDoZVOs",
+                 "scope" : "GOOGLE",
+                 "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+                 "user_ratings_total" : 35,
+                 "vicinity" : "1F, 2號出口旁, No. 6號, 高鐵七路, 竹北市"
+              }
+           ],
+           "status" : "OK"
+        }
+  recorded_at: Fri, 18 Dec 2020 06:14:58 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyCKFRjdZEMng_7iZGdqpVZTBnmQ2pkbans&language=zh-TW&location=24.8063576,121.0399247&radius=&type=restaurant
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - maps.googleapis.com
+      User-Agent:
+      - http.rb/4.4.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 18 Dec 2020 06:17:45 GMT
+      Expires:
+      - Fri, 18 Dec 2020 06:22:45 GMT
+      Cache-Control:
+      - public, max-age=300
+      Server:
+      - scaffolding on HTTPServer2
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=26
+      Alt-Svc:
+      - h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Accept-Ranges:
+      - none
+      Vary:
+      - Accept-Encoding
+      Connection:
+      - close
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "html_attributions" : [],
+           "results" : [],
+           "status" : "INVALID_REQUEST"
+        }
+  recorded_at: Fri, 18 Dec 2020 06:17:45 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyCKFRjdZEMng_7iZGdqpVZTBnmQ2pkbans&language=zh-TW&location=24.8063576,121.0399247&radius=500&type=restaurant
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - maps.googleapis.com
+      User-Agent:
+      - http.rb/4.4.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 18 Dec 2020 06:17:58 GMT
+      Expires:
+      - Fri, 18 Dec 2020 06:22:58 GMT
+      Cache-Control:
+      - public, max-age=300
+      Server:
+      - scaffolding on HTTPServer2
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=219
+      Alt-Svc:
+      - h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Accept-Ranges:
+      - none
+      Vary:
+      - Accept-Encoding
+      Connection:
+      - close
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "html_attributions" : [],
+           "next_page_token" : "ATtYBwITx6_QD2ztnLsE99YxC2-ot1bQRKVOb79HHnlOeo5EHz3jX6Q6Lmwi6A_PbQdAfYgrSLN5Kr1bV5_FzQCQ3WF5k-lVdeeJ0H4WzYfNGf7jwFe0U3a128fEYcgimcrT-lHCvqs9YpLQbR4UL_DIMYw3y8j50rO7MtnequQf3FF3DhFvrX6CC0aTQqkKMGEJUcW8hBfV_DyxSsYyDJuVtTyjF4XB6aC5xs4YhnivWlkuX9GZ9wLBEf_TOxl5tgbVfpx2geObJGJz4mwFJZFq3VrhDDIuw4-Mt2oniiCrcP3aQmoS2xiQ-4UekRHyAqefCMb8sOQEDR7I6kehtJxZ9nUH92QHcIIiRYGlHKMHg8Oa0TMEmeuJNmWLYb6_-AKXauSZPjjtw8j_fL6hjPmGgm_FGj_4R8vQLShpGd1q0LKUzcEvMdiDbEXs2agc",
+           "results" : [
+              {
+                 "business_status" : "OPERATIONAL",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 24.8040998,
+                       "lng" : 121.036527
+                    },
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 24.8053892802915,
+                          "lng" : 121.0379055302915
+                       },
+                       "southwest" : {
+                          "lat" : 24.8026913197085,
+                          "lng" : 121.0352075697085
+                       }
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+                 "name" : "Chubby 喜樂餐廳",
+                 "opening_hours" : {
+                    "open_now" : true
+                 },
+                 "photos" : [
+                    {
+                       "height" : 3096,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/111253302540086313694\"\u003e花轟Hana\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "ATtYBwJKO1NkwkCEmL-gBWYDUb_kRqxOlzPqIzHyR797T5jqv_J5mw5Sbokqj8i8kDLpoEpVWcFhvP8HfXaqODx-Uf-j6ZnN2EgS7SRzqHz88NtGaFJbKHKBMwEibpfJHJ2aiDrW1sPv0279VLoQY7GDscxaZYjCC3lrAg16kzM-pLd9eLoU",
+                       "width" : 5504
+                    }
+                 ],
+                 "place_id" : "ChIJE1EFg6s3aDQRnIudYEj6DRk",
+                 "plus_code" : {
+                    "compound_code" : "R23P+JJ 台灣新竹縣竹北市",
+                    "global_code" : "7QP3R23P+JJ"
+                 },
+                 "price_level" : 2,
+                 "rating" : 3.9,
+                 "reference" : "ChIJE1EFg6s3aDQRnIudYEj6DRk",
+                 "scope" : "GOOGLE",
+                 "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+                 "user_ratings_total" : 727,
+                 "vicinity" : "竹北市高鐵二路158巷8號"
+              },
+              {
+                 "business_status" : "OPERATIONAL",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 24.807997,
+                       "lng" : 121.0398063
+                    },
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 24.8093459802915,
+                          "lng" : 121.0411552802915
+                       },
+                       "southwest" : {
+                          "lat" : 24.8066480197085,
+                          "lng" : 121.0384573197085
+                       }
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+                 "name" : "摩斯漢堡 高鐵新竹店",
+                 "opening_hours" : {
+                    "open_now" : true
+                 },
+                 "photos" : [
+                    {
+                       "height" : 3264,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/106596031662182807626\"\u003echun-hao Chang\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "ATtYBwJExXSPaNQYA1xy5Z5zc0e5A0NCCBDPRBCCaenpSxboQQlZEHMsTC_9ax9WJTL0cAHQb1pbn6CsSGjCO3fOjYckWvee0SoS-4Elbw3ZejN_LiMvdzbX_jQ0eedL5JcL8DLXtTujQzYFysZteOgOQZmIUqIAwN3Lwuqnms8rU3IwTB5D",
+                       "width" : 4928
+                    }
+                 ],
+                 "place_id" : "ChIJp0qcWwc3aDQRPjTN84cnRWY",
+                 "plus_code" : {
+                    "compound_code" : "R25Q+5W 台灣新竹縣竹北市",
+                    "global_code" : "7QP3R25Q+5W"
+                 },
+                 "price_level" : 2,
+                 "rating" : 3.5,
+                 "reference" : "ChIJp0qcWwc3aDQRPjTN84cnRWY",
+                 "scope" : "GOOGLE",
+                 "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+                 "user_ratings_total" : 604,
+                 "vicinity" : "竹北市高鐵七路6號"
+              },
+              {
+                 "business_status" : "OPERATIONAL",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 24.8057719,
+                       "lng" : 121.0368846
+                    },
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 24.8071217802915,
+                          "lng" : 121.0381926802915
+                       },
+                       "southwest" : {
+                          "lat" : 24.8044238197085,
+                          "lng" : 121.0354947197085
+                       }
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+                 "name" : "Family Pizza 手工柴燒窯烤比薩-高鐵六家總店(現點現做，建議內用、外帶提前預訂’餐點‘；內用自由入座，無訂位!）",
+                 "opening_hours" : {
+                    "open_now" : false
+                 },
+                 "photos" : [
+                    {
+                       "height" : 3024,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/103941947581766527161\"\u003eCH B Chen\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "ATtYBwKvf1I0cezeIL9dPAJSXGJuj8YOZV56Q3IPPlYpT2JTZbpbtwtzT3MXB5pRoHAVLcPDWORLhetAHHoJUzdxu3e7Iyw9Bw6GWGvF00uUVmhHDaq432H1JPjlA1RVDSKzsffLyoQiVLiSuBtfLdIKM-AgHO_lX4YOdtulwhi7NQNPwBE6",
+                       "width" : 4032
+                    }
+                 ],
+                 "place_id" : "ChIJn2Jgrqs3aDQRZ3QzIrgPdSA",
+                 "plus_code" : {
+                    "compound_code" : "R24P+8Q 台灣新竹縣竹北市",
+                    "global_code" : "7QP3R24P+8Q"
+                 },
+                 "price_level" : 2,
+                 "rating" : 4.4,
+                 "reference" : "ChIJn2Jgrqs3aDQRZ3QzIrgPdSA",
+                 "scope" : "GOOGLE",
+                 "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+                 "user_ratings_total" : 1172,
+                 "vicinity" : "竹北市高鐵二路65號"
+              },
+              {
+                 "business_status" : "CLOSED_TEMPORARILY",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 24.8080601,
+                       "lng" : 121.0404152
+                    },
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 24.8093430302915,
+                          "lng" : 121.0418581302915
+                       },
+                       "southwest" : {
+                          "lat" : 24.8066450697085,
+                          "lng" : 121.0391601697085
+                       }
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+                 "name" : "CoCo壹番屋 新竹高鐵店",
+                 "permanently_closed" : true,
+                 "photos" : [
+                    {
+                       "height" : 3024,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/109091154366455188982\"\u003eCoCo壹番屋 新竹高鐵店\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "ATtYBwJIDU7wKa78ig26BxbAQ9VsF9IAT2ASO8XX1uivhqZZ0ryo5NQ0-PwlmOeoTJUld3FHq9cCegaIUHH5w0BSaFQuWOAKlS9HeFk5RN-n5olZli7-Q_st9R8eHRRvtXB0cOGEGkZbEqMWKW852HzVwihqrRM0OF29mwcpKUPpoCRm7plV",
+                       "width" : 4032
+                    }
+                 ],
+                 "place_id" : "ChIJBT_Tf6w3aDQRG7gh9N19AJ4",
+                 "plus_code" : {
+                    "compound_code" : "R25R+65 台灣新竹縣竹北市",
+                    "global_code" : "7QP3R25R+65"
+                 },
+                 "price_level" : 2,
+                 "reference" : "ChIJBT_Tf6w3aDQRG7gh9N19AJ4",
+                 "scope" : "GOOGLE",
+                 "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+                 "vicinity" : "竹北市高鐵七路6號"
+              },
+              {
+                 "business_status" : "OPERATIONAL",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 24.8080601,
+                       "lng" : 121.0404152
+                    },
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 24.8094763802915,
+                          "lng" : 121.0419320802915
+                       },
+                       "southwest" : {
+                          "lat" : 24.8067784197085,
+                          "lng" : 121.0392341197085
+                       }
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+                 "name" : "爭鮮 GOGO -新竹高鐵店",
+                 "opening_hours" : {
+                    "open_now" : true
+                 },
+                 "photos" : [
+                    {
+                       "height" : 960,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/104251940057324103010\"\u003e爭鮮外帶-新竹高鐵店\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "ATtYBwIOQ7tfrODmzimsFWqLH6cjF0SDgME1f0JLHz8_r8SgUtMPuiY5fD2_PcdSnwM9rSurGtO0imTPldEZQJ2OVeyndrHwE4bO-BMvw3CmObn8bnC1B6nmcTuoFB015gSidpbvPD0qQoVHp9CYn61H_V_AayGktVyppdyBcaL241fHTEua",
+                       "width" : 1280
+                    }
+                 ],
+                 "place_id" : "ChIJd026Vf03aDQRroReLDoZVOs",
+                 "plus_code" : {
+                    "compound_code" : "R25R+65 台灣新竹縣竹北市",
+                    "global_code" : "7QP3R25R+65"
+                 },
+                 "rating" : 2.6,
+                 "reference" : "ChIJd026Vf03aDQRroReLDoZVOs",
+                 "scope" : "GOOGLE",
+                 "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+                 "user_ratings_total" : 35,
+                 "vicinity" : "1F, 2號出口旁, No. 6號, 高鐵七路, 竹北市"
+              },
+              {
+                 "business_status" : "OPERATIONAL",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 24.8081008,
+                       "lng" : 121.0404187
+                    },
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 24.8093732802915,
+                          "lng" : 121.0418686802915
+                       },
+                       "southwest" : {
+                          "lat" : 24.8066753197085,
+                          "lng" : 121.0391707197085
+                       }
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+                 "name" : "SUBWAY 潛艇堡",
+                 "opening_hours" : {
+                    "open_now" : true
+                 },
+                 "photos" : [
+                    {
+                       "height" : 777,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/109370882236932660410\"\u003eS IU\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "ATtYBwLsLTZ16jeY_Nnw6noHM1VBh6JH58VDUBUUz5c8Fxdhb1o01a0gAmNqoznrlKV0vQ4OUmw2oPlTdjhVq-OP72vc-A9GWgSX6gXcpRXTPNGKzf0Dqcvs3mG08xCPz1fnSRl9wC8FUuFPf1UYYO5Yx6T2shyijfMlT--y4OK2h1brXOiv",
+                       "width" : 1600
+                    }
+                 ],
+                 "place_id" : "ChIJBx61c7U3aDQRwlsQx_tB_fo",
+                 "plus_code" : {
+                    "compound_code" : "R25R+65 台灣新竹縣竹北市",
+                    "global_code" : "7QP3R25R+65"
+                 },
+                 "price_level" : 2,
+                 "rating" : 2.3,
+                 "reference" : "ChIJBx61c7U3aDQRwlsQx_tB_fo",
+                 "scope" : "GOOGLE",
+                 "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+                 "user_ratings_total" : 44,
+                 "vicinity" : "竹北市高鐵七路6號"
+              },
+              {
+                 "business_status" : "OPERATIONAL",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 24.8077488,
+                       "lng" : 121.0384703
+                    },
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 24.8091365802915,
+                          "lng" : 121.0398317302915
+                       },
+                       "southwest" : {
+                          "lat" : 24.8064386197085,
+                          "lng" : 121.0371337697085
+                       }
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+                 "name" : "盛栗南洋料理",
+                 "photos" : [
+                    {
+                       "height" : 2304,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/105316461392793352040\"\u003egary chang\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "ATtYBwLNR_nBGiWNzi-l2A1eYfn4FK2GsLwDQl7DZ8iezbOwH8W8CEjy9FzxIDmRY-OeS923QWVZ2Qr-LflB37ByXGHcYcNAfdsALBEeAbkASPx6GFut-gP_imH9t9Rn-apWwKEshj3D15LE5CfsYD9luqM1z3wUDIr_dvoPiRVwjDBXqgS5",
+                       "width" : 4608
+                    }
+                 ],
+                 "place_id" : "ChIJqdblXl03aDQR3KseHuxgC8s",
+                 "plus_code" : {
+                    "compound_code" : "R25Q+39 台灣新竹縣竹北市",
+                    "global_code" : "7QP3R25Q+39"
+                 },
+                 "rating" : 3.1,
+                 "reference" : "ChIJqdblXl03aDQR3KseHuxgC8s",
+                 "scope" : "GOOGLE",
+                 "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+                 "user_ratings_total" : 17,
+                 "vicinity" : "4樓, No. 168號, 復興三路二段, 竹北市"
+              },
+              {
+                 "business_status" : "OPERATIONAL",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 24.8076245,
+                       "lng" : 121.0383102
+                    },
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 24.8090388802915,
+                          "lng" : 121.0398858802915
+                       },
+                       "southwest" : {
+                          "lat" : 24.80634091970849,
+                          "lng" : 121.0371879197085
+                       }
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+                 "name" : "劉震川日韓大食館 暐順經貿大樓店",
+                 "opening_hours" : {
+                    "open_now" : true
+                 },
+                 "photos" : [
+                    {
+                       "height" : 1440,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/101397965290400248876\"\u003eEason Huang\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "ATtYBwIX3hF628xmKgS9-cyQbqZEUzX5Q5dB0kJTVnBXFi70bhYrdY02LjqR86u9o2Yf6sDMLLsW5Jyq0TavVmaN51RjwoabUAz9Z_T3tsguPLZpQunxOtpguQ70nTvAqUZHpmUpmbSoQem9Al3kf6Ambkq3Hf33peTx5vyTtTxMiEYZwd9c",
+                       "width" : 2560
+                    }
+                 ],
+                 "place_id" : "ChIJhbMgG6o3aDQRkiahcwv_szw",
+                 "plus_code" : {
+                    "compound_code" : "R25Q+28 台灣新竹縣竹北市",
+                    "global_code" : "7QP3R25Q+28"
+                 },
+                 "rating" : 3.3,
+                 "reference" : "ChIJhbMgG6o3aDQRkiahcwv_szw",
+                 "scope" : "GOOGLE",
+                 "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+                 "user_ratings_total" : 288,
+                 "vicinity" : "竹北市復興三路二段168號3024樓"
+              },
+              {
+                 "business_status" : "OPERATIONAL",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 24.8076245,
+                       "lng" : 121.0383102
+                    },
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 24.8090890802915,
+                          "lng" : 121.0396963302915
+                       },
+                       "southwest" : {
+                          "lat" : 24.8063911197085,
+                          "lng" : 121.0369983697085
+                       }
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+                 "name" : "港點大師 暐順經貿大樓店",
+                 "opening_hours" : {
+                    "open_now" : true
+                 },
+                 "photos" : [
+                    {
+                       "height" : 2620,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/109692990373357945589\"\u003eKED KO\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "ATtYBwKBUoedK8w_qMUhjRJQngrsV-vfag_Qn1pUgSvngCM1o_3CXEegMDiaQuAdmNEqGTqQyBVXrUFxwQKKDVXVhDzBCtpg5PEqiuQmszOm165I4Q2QM0-7XubIXCYhiGJHqiRUNgxdFnD0B6bE6McbS5l6Iv0p5dsGHu8EmYR82Cndc_TX",
+                       "width" : 4656
+                    }
+                 ],
+                 "place_id" : "ChIJCf3kGqo3aDQRNzhmEM3-sbw",
+                 "plus_code" : {
+                    "compound_code" : "R25Q+28 台灣新竹縣竹北市",
+                    "global_code" : "7QP3R25Q+28"
+                 },
+                 "price_level" : 2,
+                 "rating" : 3.4,
+                 "reference" : "ChIJCf3kGqo3aDQRNzhmEM3-sbw",
+                 "scope" : "GOOGLE",
+                 "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+                 "user_ratings_total" : 444,
+                 "vicinity" : "竹北市復興三路二段168號5樓"
+              },
+              {
+                 "business_status" : "OPERATIONAL",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 24.8062257,
+                       "lng" : 121.0377902
+                    },
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 24.8076856302915,
+                          "lng" : 121.0391765302915
+                       },
+                       "southwest" : {
+                          "lat" : 24.80498766970849,
+                          "lng" : 121.0364785697085
+                       }
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+                 "name" : "姐妹嗆辣鍋",
+                 "opening_hours" : {
+                    "open_now" : true
+                 },
+                 "photos" : [
+                    {
+                       "height" : 2700,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/111075745030887454466\"\u003e姐妹嗆辣鍋\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "ATtYBwKyFaI-LV3kNVUyozw-T7uECx_iRZxkQbiirob5ibEGPOZTCOva7gBK3KumRHXBMOF6rQBNy65rmElFhgVyRnSMMKgOnDZATXeSwklP04wGf3mVEbeK5he36iKkjMzBFQzDpz61tq2zizjk_UNKF4dNcLOGwG8_5l8ZEkZg5Cl0FkNn",
+                       "width" : 3780
+                    }
+                 ],
+                 "place_id" : "ChIJZ4uuHzw3aDQRo43sKCg54Zk",
+                 "plus_code" : {
+                    "compound_code" : "R24Q+F4 台灣新竹縣竹北市",
+                    "global_code" : "7QP3R24Q+F4"
+                 },
+                 "rating" : 4.5,
+                 "reference" : "ChIJZ4uuHzw3aDQRo43sKCg54Zk",
+                 "scope" : "GOOGLE",
+                 "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+                 "user_ratings_total" : 50,
+                 "vicinity" : "竹北市文興路二段170號"
+              },
+              {
+                 "business_status" : "OPERATIONAL",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 24.806124,
+                       "lng" : 121.0377618
+                    },
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 24.8076340802915,
+                          "lng" : 121.0391649802915
+                       },
+                       "southwest" : {
+                          "lat" : 24.8049361197085,
+                          "lng" : 121.0364670197085
+                       }
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+                 "name" : "姊妹精緻涮涮鍋",
+                 "opening_hours" : {
+                    "open_now" : true
+                 },
+                 "photos" : [
+                    {
+                       "height" : 1052,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/115018943760223517780\"\u003e姐妹精緻涮涮鍋\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "ATtYBwLIcE5Y1_YQ5FOU6WzlyZod3EvpgsxIRIdouoCkaQWBCZxGWJMdHiXNP2Fxi6FzD5PHuPrv6oJEpsXcVCDFNQ_lskluiiq-T64PMZPPGP-H4f1-GKJoqQ3ie7FvMrq0Z5kXvBjly_AvYY72ma0oZnmxvfEcJfBxu9Sf_sUkHnUGGAI",
+                       "width" : 700
+                    }
+                 ],
+                 "place_id" : "ChIJ1Qwnn243aDQRWPeRtFYQB0I",
+                 "plus_code" : {
+                    "compound_code" : "R24Q+C4 台灣新竹縣竹北市",
+                    "global_code" : "7QP3R24Q+C4"
+                 },
+                 "rating" : 5,
+                 "reference" : "ChIJ1Qwnn243aDQRWPeRtFYQB0I",
+                 "scope" : "GOOGLE",
+                 "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+                 "user_ratings_total" : 1,
+                 "vicinity" : "竹北市文興路二段170號"
+              },
+              {
+                 "business_status" : "OPERATIONAL",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 24.8063457,
+                       "lng" : 121.0377422
+                    },
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 24.8077568302915,
+                          "lng" : 121.0391120802915
+                       },
+                       "southwest" : {
+                          "lat" : 24.8050588697085,
+                          "lng" : 121.0364141197085
+                       }
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+                 "name" : "初這家麵食館",
+                 "opening_hours" : {
+                    "open_now" : false
+                 },
+                 "photos" : [
+                    {
+                       "height" : 3024,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/103951337626977097082\"\u003eToby Chen\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "ATtYBwJ77XVNSGfjqS4na9Un6NWEFLC49J3XG5q6qLOsIM6oWAKLpANmkb35g60lURaY8GKk6F0R6_A5-YRWxOGuj_TB7V2bGBn4r-jAYA1BAYvoTvgDKiLkQjQkZKNjJcOKL1ElonrFAu7DgWUC6q9vPiiI7xEk8TRKrJkAROKmz1ya_CC6",
+                       "width" : 4032
+                    }
+                 ],
+                 "place_id" : "ChIJPQf4Rpo3aDQRjmWRxtWNWsU",
+                 "plus_code" : {
+                    "compound_code" : "R24Q+G3 台灣新竹縣竹北市",
+                    "global_code" : "7QP3R24Q+G3"
+                 },
+                 "rating" : 3.8,
+                 "reference" : "ChIJPQf4Rpo3aDQRjmWRxtWNWsU",
+                 "scope" : "GOOGLE",
+                 "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+                 "user_ratings_total" : 267,
+                 "vicinity" : "竹北市文興路二段178號"
+              },
+              {
+                 "business_status" : "OPERATIONAL",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 24.8063721,
+                       "lng" : 121.0376634
+                    },
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 24.8077812802915,
+                          "lng" : 121.0390339802915
+                       },
+                       "southwest" : {
+                          "lat" : 24.80508331970849,
+                          "lng" : 121.0363360197085
+                       }
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+                 "name" : "姊妹飯桶",
+                 "opening_hours" : {
+                    "open_now" : false
+                 },
+                 "photos" : [
+                    {
+                       "height" : 3024,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/117479343831120198418\"\u003e邱偉茗\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "ATtYBwK6BDuoXqV-QvL2CXMFOyYLdjyzYe7FtbsF6bjNDE5FO_qQwqcg8gyd3u5tr7x9RfeqZYbYFMcUUjeSOzQ3M6iOibcOEgH2wDUGYBtOfVIvj3nuqTDZD5RBstsEjEuyAr3TcZACBSqfk4GqfOTVnA7LmA2zJOXaxeZOdYszykrF7HeR",
+                       "width" : 4032
+                    }
+                 ],
+                 "place_id" : "ChIJsWY7SKo3aDQRdeHx-DTT5fE",
+                 "plus_code" : {
+                    "compound_code" : "R24Q+G3 台灣新竹縣竹北市",
+                    "global_code" : "7QP3R24Q+G3"
+                 },
+                 "price_level" : 1,
+                 "rating" : 4.1,
+                 "reference" : "ChIJsWY7SKo3aDQRdeHx-DTT5fE",
+                 "scope" : "GOOGLE",
+                 "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+                 "user_ratings_total" : 353,
+                 "vicinity" : "竹北市文興路二段176號"
+              },
+              {
+                 "business_status" : "OPERATIONAL",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 24.8063753,
+                       "lng" : 121.0375411
+                    },
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 24.8077993802915,
+                          "lng" : 121.0389170302915
+                       },
+                       "southwest" : {
+                          "lat" : 24.8051014197085,
+                          "lng" : 121.0362190697085
+                       }
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+                 "name" : "陳家原味鴨肉飯",
+                 "opening_hours" : {
+                    "open_now" : false
+                 },
+                 "photos" : [
+                    {
+                       "height" : 3024,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/116372902278837118160\"\u003eCheney Ko\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "ATtYBwLx54Q2XZlC_G5haLdcAx-eRzJMHxNmQu62xLd6K2XTsdRw-ym71SwdVCEkSlYc6eF1_iCst580_W0K6xrLVwLBlAHgyE73K9Npl2l09HYknFA-kMjVHV4XDXsfbZH8r8nXlqFDQQoS9MZQZVOmPqchb7o4S7yPCBw2LNS1iab81jL9",
+                       "width" : 4032
+                    }
+                 ],
+                 "place_id" : "ChIJi1rczqo3aDQRAA_hn96jUzU",
+                 "plus_code" : {
+                    "compound_code" : "R24Q+H2 台灣新竹縣竹北市",
+                    "global_code" : "7QP3R24Q+H2"
+                 },
+                 "rating" : 3.1,
+                 "reference" : "ChIJi1rczqo3aDQRAA_hn96jUzU",
+                 "scope" : "GOOGLE",
+                 "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+                 "user_ratings_total" : 179,
+                 "vicinity" : "No. 168, No. 302, 文興路二段, 竹北市"
+              },
+              {
+                 "business_status" : "OPERATIONAL",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 24.8064278,
+                       "lng" : 121.0375039
+                    },
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 24.8077767802915,
+                          "lng" : 121.0388528802915
+                       },
+                       "southwest" : {
+                          "lat" : 24.80507881970849,
+                          "lng" : 121.0361549197085
+                       }
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+                 "name" : "清水米糕",
+                 "opening_hours" : {
+                    "open_now" : false
+                 },
+                 "place_id" : "ChIJI_PXvuI3aDQRqAxmYm2rBGM",
+                 "plus_code" : {
+                    "compound_code" : "R24Q+H2 台灣新竹縣竹北市",
+                    "global_code" : "7QP3R24Q+H2"
+                 },
+                 "rating" : 5,
+                 "reference" : "ChIJI_PXvuI3aDQRqAxmYm2rBGM",
+                 "scope" : "GOOGLE",
+                 "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+                 "user_ratings_total" : 1,
+                 "vicinity" : "竹北市文興路二段166號"
+              },
+              {
+                 "business_status" : "OPERATIONAL",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 24.8075019,
+                       "lng" : 121.0378186
+                    },
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 24.8090829802915,
+                          "lng" : 121.0392421802915
+                       },
+                       "southwest" : {
+                          "lat" : 24.8063850197085,
+                          "lng" : 121.0365442197085
+                       }
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+                 "name" : "好萌時光咖哩",
+                 "opening_hours" : {
+                    "open_now" : true
+                 },
+                 "photos" : [
+                    {
+                       "height" : 3000,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/108234346580058759756\"\u003ePoChien Wang\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "ATtYBwLIvs7EUjs3vMt5wDohZlZKXrZ3BMTq6jhalQm2OZRKnCVdRciCuIhWxZbNYWwmVD22160FLyNcY1vFnR2VAoWhUNvdm-_iDdtzdAaQYS5aKwA3wOh_-cSn9E6FG0905vNTPMaIEC1opjBM3YPbAUN9cT4zvs79E-wsG4NJPolVcHAe",
+                       "width" : 3000
+                    }
+                 ],
+                 "place_id" : "ChIJuX-Tfao3aDQRX_ZzIsMuRVY",
+                 "plus_code" : {
+                    "compound_code" : "R25Q+24 台灣新竹縣竹北市",
+                    "global_code" : "7QP3R25Q+24"
+                 },
+                 "rating" : 3.6,
+                 "reference" : "ChIJuX-Tfao3aDQRX_ZzIsMuRVY",
+                 "scope" : "GOOGLE",
+                 "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+                 "user_ratings_total" : 217,
+                 "vicinity" : "竹北市復興三路二段168號"
+              },
+              {
+                 "business_status" : "OPERATIONAL",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 24.80641049999999,
+                       "lng" : 121.0374557
+                    },
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 24.8078300802915,
+                          "lng" : 121.0388299802915
+                       },
+                       "southwest" : {
+                          "lat" : 24.8051321197085,
+                          "lng" : 121.0361320197085
+                       }
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+                 "name" : "井町日式蔬食-高鐵店",
+                 "opening_hours" : {
+                    "open_now" : false
+                 },
+                 "photos" : [
+                    {
+                       "height" : 3138,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/108428250582677374170\"\u003e樂樂\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "ATtYBwIiQxky7JQlQf-MT-I1LyS7LNdAeqAW8N6BoVxifs7VMUy-EZYau7AtQmJF6wQlHLPDhEOl6Yk_KTc4-yKMaFTeTcTyGQ2YDaXZWPP376GrWP4fBcvgTuEKIZaqpKM0zJv-eWG2md4hsfsbXZQ4I7I0XQPrgJppK-WlSwMWfhfr1jcX",
+                       "width" : 2768
+                    }
+                 ],
+                 "place_id" : "ChIJvbj9QC83aDQRmY71AQoCQkY",
+                 "plus_code" : {
+                    "compound_code" : "R24P+HX 台灣新竹縣竹北市",
+                    "global_code" : "7QP3R24P+HX"
+                 },
+                 "rating" : 4.3,
+                 "reference" : "ChIJvbj9QC83aDQRmY71AQoCQkY",
+                 "scope" : "GOOGLE",
+                 "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+                 "user_ratings_total" : 204,
+                 "vicinity" : "竹北市文興路二段162號"
+              },
+              {
+                 "business_status" : "OPERATIONAL",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 24.8051409,
+                       "lng" : 121.0421021
+                    },
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 24.8065613302915,
+                          "lng" : 121.0434940302915
+                       },
+                       "southwest" : {
+                          "lat" : 24.8038633697085,
+                          "lng" : 121.0407960697085
+                       }
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+                 "name" : "平成炭火燒肉",
+                 "opening_hours" : {
+                    "open_now" : false
+                 },
+                 "photos" : [
+                    {
+                       "height" : 1440,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/110242168314044750408\"\u003e平成炭火燒肉\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "ATtYBwKqA-mvYXdXNJcB6v5AAcJRvuxZ5Hpb_1oMU3mf2R7dCCPY8fwfosPAibGviqnZspA7oyCOYQGA1WjvqfhdNpKhf2wBtxhjoabC9tabVQTGMOHUDAua5jF2ADCP-xu_L6Yg3LgROuYTEefQlwokItMnHtUJlz3Z7E779vyMxViXYlQ",
+                       "width" : 1440
+                    }
+                 ],
+                 "place_id" : "ChIJ0Ws9zGY3aDQRoHVGJkIyQRE",
+                 "plus_code" : {
+                    "compound_code" : "R24R+3R 台灣新竹縣竹北市",
+                    "global_code" : "7QP3R24R+3R"
+                 },
+                 "rating" : 4.4,
+                 "reference" : "ChIJ0Ws9zGY3aDQRoHVGJkIyQRE",
+                 "scope" : "GOOGLE",
+                 "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+                 "user_ratings_total" : 91,
+                 "vicinity" : "竹北市文興路二段332號"
+              },
+              {
+                 "business_status" : "OPERATIONAL",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 24.8065462,
+                       "lng" : 121.0373623
+                    },
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 24.8079086302915,
+                          "lng" : 121.0387161302915
+                       },
+                       "southwest" : {
+                          "lat" : 24.8052106697085,
+                          "lng" : 121.0360181697085
+                       }
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+                 "name" : "天津牛肉麵",
+                 "opening_hours" : {
+                    "open_now" : false
+                 },
+                 "photos" : [
+                    {
+                       "height" : 3492,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/101083902510509758978\"\u003eJason Cheng\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "ATtYBwI88DK0uPxWHPfb0JYua8W4z0LC3prXuH8dX3SM6wqnumOYHym1OCHCC2IbC5jNuFLFPLYcxj3MDjoDgoh9f7PJIFaloS-0honyeF3aepk-8JEeGdETGkfWLHAPdsW2PC6eon_l3ejAUfkO-11xqNC-roife9K-m9ET1CouBJFO4Qrd",
+                       "width" : 4656
+                    }
+                 ],
+                 "place_id" : "ChIJAwBAT6o3aDQROO1hqy5HxFk",
+                 "plus_code" : {
+                    "compound_code" : "R24P+JW 台灣新竹縣竹北市",
+                    "global_code" : "7QP3R24P+JW"
+                 },
+                 "price_level" : 1,
+                 "rating" : 3.7,
+                 "reference" : "ChIJAwBAT6o3aDQROO1hqy5HxFk",
+                 "scope" : "GOOGLE",
+                 "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+                 "user_ratings_total" : 347,
+                 "vicinity" : "竹北市文興路二段158號"
+              },
+              {
+                 "business_status" : "OPERATIONAL",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 24.8064136,
+                       "lng" : 121.037331
+                    },
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 24.8078249802915,
+                          "lng" : 121.0387901302915
+                       },
+                       "southwest" : {
+                          "lat" : 24.80512701970849,
+                          "lng" : 121.0360921697085
+                       }
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+                 "name" : "廢材串燒酒場Skewers & Beer高鐵店/特色餐廳/串燒/燒烤/竹北宵夜/聚餐/居酒屋/包廂/氣氛熱鬧/BBQ/新竹高鐵/竹北串燒/精釀",
+                 "opening_hours" : {
+                    "open_now" : false
+                 },
+                 "photos" : [
+                    {
+                       "height" : 339,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/113416620864986557328\"\u003e廢材串燒酒場Skewers &amp; Beer高鐵店/特色餐廳/串燒/燒烤/竹北宵夜/聚餐/居酒屋/包廂/氣氛熱鬧/BBQ/新竹高鐵/竹北串燒/精釀\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "ATtYBwL27KFC3sm2Kgtx4bqjGqYCaxyV35ISBFHoynVkBpk9hQN-oWwAv5OxEwdwf3EN-yAPaJfemp9hAA7_zlkRJsK1EC7Dd8pKCVO9xlnf3efAkjEBpALyeitfaVgKCyaZFrLA9paL4V-9nrKMTQeAbazSuAn05Kxh34Wggfw0ftj3SxuW",
+                       "width" : 600
+                    }
+                 ],
+                 "place_id" : "ChIJn6xpT6o3aDQRppI1YMPO9Pc",
+                 "plus_code" : {
+                    "compound_code" : "R24P+HW 台灣新竹縣竹北市",
+                    "global_code" : "7QP3R24P+HW"
+                 },
+                 "price_level" : 2,
+                 "rating" : 4.2,
+                 "reference" : "ChIJn6xpT6o3aDQRppI1YMPO9Pc",
+                 "scope" : "GOOGLE",
+                 "types" : [
+                    "restaurant",
+                    "bar",
+                    "liquor_store",
+                    "food",
+                    "point_of_interest",
+                    "store",
+                    "establishment"
+                 ],
+                 "user_ratings_total" : 902,
+                 "vicinity" : "竹北市文興路二段156號1樓-1"
+              }
+           ],
+           "status" : "OK"
+        }
+  recorded_at: Fri, 18 Dec 2020 06:17:58 GMT
 recorded_with: VCR 6.0.0

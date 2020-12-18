@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 source 'https://rubygems.org'
-ruby File.read('.ruby_version').strip
+ruby File.read('.ruby-version').strip
 
 # Networking
 gem 'http', '~> 4.0'
@@ -67,4 +67,5 @@ group :development, :test do
 end
 
 # Utilities
+gem 'rack-test' # can also be used to diagnose production
 gem 'rake'
