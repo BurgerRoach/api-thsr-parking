@@ -151,3 +151,9 @@ desc 'Run application console (irb)'
 task :console do
   sh 'irb -r ./init'
 end
+
+desc 'Run tests'
+task :api_spec do
+  sh 'ruby spec/tests_acceptance/api_spec.rb'
+  puts 'api_spec Tests executed'
+end

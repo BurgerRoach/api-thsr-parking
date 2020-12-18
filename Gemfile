@@ -67,4 +67,5 @@ group :development, :test do
 end
 
 # Utilities
+gem 'rack-test' # can also be used to diagnose production
 gem 'rake'
