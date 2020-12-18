@@ -6,4 +6,3 @@ coverage/*
 .irb_history
 .bundle
 .irbrc
-Gemfile.lock
