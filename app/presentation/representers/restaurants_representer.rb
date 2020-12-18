@@ -11,7 +11,7 @@ module THSRParking
     class RestaurantsList < Roar::Decorator
       include Roar::JSON
 
-      collection :restaurants, extend: Representer::Restaurant
+      collection :restaurants, extend: Representer::Restaurant,class: OpenStruct
     end
   end
 end
