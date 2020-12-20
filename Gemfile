@@ -3,6 +3,11 @@
 source 'https://rubygems.org'
 ruby File.read('.ruby-version').strip
 
+# Asynchronicity
+gem 'aws-sdk-sqs', '~> 1'
+gem 'concurrent-ruby', '~> 1.1'
+gem 'shoryuken', '~> 5'
+
 # Networking
 gem 'http', '~> 4.0'
 gem 'json'

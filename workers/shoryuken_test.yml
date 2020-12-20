@@ -1,0 +1,2 @@
+queues:
+  - https://sqs.ap-northeast-2.amazonaws.com/760817802617/THSRParking-dev
