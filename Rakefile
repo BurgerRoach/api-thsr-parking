@@ -157,3 +157,9 @@ task :api_spec do
   sh 'ruby spec/tests_acceptance/api_spec.rb'
   puts 'api_spec Tests executed'
 end
+
+desc 'This task is called by the Heroku scheduler add-on'
+task :app_wake => :config do
+  puts 'Waking up app......'
+  puts 'App woke up.'
+end
