@@ -20,6 +20,9 @@ module THSRParking
 
       secret_config = YAML.safe_load(File.read('./config/secrets.yml'))
       ENV['API_KEY'] = secret_config['API_KEY']
+
+      ENV['PTX_APP_ID'] = secret_config['PTX_APP_ID']
+      ENV['PTX_APP_KEY'] = secret_config['PTX_APP_KEY']
     end
 
     configure :production do

@@ -61,7 +61,7 @@ module THSRParking
           # direction
           url += "&$filter=Direction%20eq%20'#{direction}'" unless direction.nil?
 
-          return url
+          url
         end
       end
 

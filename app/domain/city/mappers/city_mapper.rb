@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-# THSRParking::THSR::City
+
 module THSRParking
   # Provides access to THSR City
   module THSR
