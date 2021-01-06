@@ -7,6 +7,8 @@ module Errors
   class Unauthorized < StandardError; end
   # HTTP Error:Not found
   class NotFound < StandardError; end
+  # HTTP Error: Not Allowed
+  class MethodNotAllowed < StandardError; end
 
   # Options Error
   class OptionsError < StandardError; end
