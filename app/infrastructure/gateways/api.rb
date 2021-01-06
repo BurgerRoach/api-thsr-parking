@@ -33,7 +33,11 @@ module THSRParking
         API_URL = 'https://traffic.transportdata.tw/MOTC/v1/Parking/OffStreet/ParkingAvailability/Rail/THSR?$format=JSON'
 
         def get
-          http_response = HTTP.get(API_URL)
+          http_response = HTTP.headers(
+            'Content-Type'  => 'application/json',
+            'Accept'        => 'application/json',
+            'User-Agent'    => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'
+          ).get(API_URL)
 
           Response.new(http_response).tap do |response|
             raise(response.error) unless response.http_error?
