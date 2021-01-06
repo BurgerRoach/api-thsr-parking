@@ -82,6 +82,27 @@ module THSRParking
                 end
               end
             end
+
+            routing.on 'timetable' do
+              routing.is do
+                # GET /cities/{city_id}/timetable
+                routing.get do
+                  direction = routing.params['direction']
+                  date = routing.params['date']
+
+                  result = Service::Cities.new.find_time(city_id, direction, date)
+
+                  if result.failure?
+                    failed = Representer::HttpResponse.new(result.failure)
+                    routing.halt failed.http_status_code, failed.to_json
+                  end
+
+                  http_response = Representer::HttpResponse.new(result.value!)
+                  response.status = http_response.http_status_code
+                  Representer::TimesList.new(result.value!.message).to_json
+                end
+              end
+            end
           end
         end
 

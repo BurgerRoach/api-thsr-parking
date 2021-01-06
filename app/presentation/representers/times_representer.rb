@@ -3,16 +3,15 @@
 require 'roar/decorator'
 require 'roar/json'
 
-require_relative 'park_representer'
+require_relative 'time_representer'
 
 module THSRParking
   module Representer
     # Represents list of cities for API output
-    class ParksList < Roar::Decorator
+    class TimesList < Roar::Decorator
       include Roar::JSON
 
-      property :update_time
-      collection :parks, extend: Representer::Park, class: OpenStruct
+      collection :data, extend: Representer::Time, class: OpenStruct
     end
   end
 end
