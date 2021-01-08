@@ -75,6 +75,24 @@ module THSRParking
         result
       end
 
+      def filiter_store_data(data)
+        @data = JSON.parse(data)
+
+        # many_park_record_instance = THSRParking::Entity::RecordManyPark.new(
+        #   parks: []
+        # )
+
+        record = @data['ParkingAvailabilities'].map do |item|
+          item['available_spaces'] = item['Availabilities'][0]['AvailableSpaces']
+          item['update_time'] = @data['UpdateTime']
+          item['park_origin_id'] = item['CarParkID']
+          item.slice('update_time', 'park_origin_id','available_spaces')
+          # many_park_record_instance.parks.push(DataMapper.new(item).build_record_entity)
+        end
+
+        # many_park_record_instance
+      end
+
       private
 
       def filter_by_options
@@ -114,6 +132,14 @@ module THSRParking
             service_status: @data['ServiceStatus'],
             full_status: @data['FullStatus'],
             charge_status: @data['ChargeStatus']
+          )
+        end
+
+        def build_record_entity
+          THSRParking::Entity::RecordOnePark.new(
+            id: @data['park_origin_id'],
+            available_spaces: @data['available_spaces'],
+            update_time: @data['update_time']
           )
         end
       end

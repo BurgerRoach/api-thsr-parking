@@ -154,12 +154,17 @@ module THSRParking
           routing.is do
             # POST /worker/
             routing.post do
-              result = JSON.parse(routing.body.read)['park_left']
-              puts result
+              # result = JSON.parse(routing.body.read)['ParkingAvailabilities']
+              # puts JSON.parse(result)
+              temp = THSR::BaseMapper.new.filiter_store_data(JSON.parse(routing.body.read)['ParkingAvailabilities'])
+              puts temp.inspect
 
-              # message = JSON.parse(routing.body.read)['UpdateTime']
+              temp.each do |item|
+                Database::ParkRecordOrm.find_or_create(item)
+              end
+
               result_response = Representer::HttpResponse.new(
-                Response::ApiResult.new(status: :ok, message: result)
+                Response::ApiResult.new(status: :ok, message: 'ok')
               )
     
               response.status = result_response.http_status_code
