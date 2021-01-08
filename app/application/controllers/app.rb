@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'roda'
+require 'json'
 
 module THSRParking
   # Web App
@@ -145,6 +146,24 @@ module THSRParking
               http_response = Representer::HttpResponse.new(result.value!)
               response.status = http_response.http_status_code
               Representer::RestaurantsList.new(result.value!.message).to_json
+            end
+          end
+        end
+
+        routing.on 'worker' do
+          routing.is do
+            # POST /worker/
+            routing.post do
+              result = JSON.parse(routing.body.read)['park_left']
+              puts result
+
+              # message = JSON.parse(routing.body.read)['UpdateTime']
+              result_response = Representer::HttpResponse.new(
+                Response::ApiResult.new(status: :ok, message: result)
+              )
+    
+              response.status = result_response.http_status_code
+              result_response.to_json
             end
           end
         end
