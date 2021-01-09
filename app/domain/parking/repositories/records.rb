@@ -21,7 +21,7 @@ module THSRParking
 
       def self.find_avg_by_park_id(park_id)
         if Econfig.env == 'production'
-          taipei = Time.now+(60*60*13)
+          taipei = Time.now+(60*60*8)
         else
           taipei = Time.now
         end
