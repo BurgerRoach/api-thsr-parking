@@ -6,24 +6,15 @@ require 'roar/json'
 # Represents essential Repo information for API output
 module THSRParking
   module Representer
-    # Represent a Park entity as Json
-    class Park < Roar::Decorator
+    # Represent a Restaurant entity as Json
+    class Record < Roar::Decorator
       include Roar::JSON
       include Roar::Hypermedia
       include Roar::Decorator::HypermediaConsumer
 
       property :id
-      property :name
-      property :city_id
-      property :city
-      property :latitude
-      property :longitude
-      property :total_spaces
       property :available_spaces
-      property :service_status
-      property :full_status
-      property :charge_status
-      property :average
+      property :update_time
     end
   end
 end

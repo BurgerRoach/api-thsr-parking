@@ -21,6 +21,7 @@ module THSRParking
       attribute :service_status,    Strict::Integer
       attribute :full_status,       Strict::Integer
       attribute :charge_status,     Strict::Integer
+      attribute :average,           Strict::Integer
     end
   end
 end

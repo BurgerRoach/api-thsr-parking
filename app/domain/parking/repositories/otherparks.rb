@@ -40,7 +40,8 @@ module THSRParking
           available_spaces: 0,
           service_status: 0,
           full_status: 0,
-          charge_status: 0
+          charge_status: 0,
+          average: 0
         )
       end
 

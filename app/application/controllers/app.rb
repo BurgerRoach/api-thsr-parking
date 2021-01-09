@@ -154,21 +154,31 @@ module THSRParking
           routing.is do
             # POST /worker/
             routing.post do
-              # result = JSON.parse(routing.body.read)['ParkingAvailabilities']
-              # puts JSON.parse(result)
-              temp = THSR::BaseMapper.new.filiter_store_data(JSON.parse(routing.body.read)['ParkingAvailabilities'])
-              puts temp.inspect
+              data = JSON.parse(routing.body.read)['ParkingAvailabilities']
 
-              temp.each do |item|
-                Database::ParkRecordOrm.find_or_create(item)
+              result = Service::StoreRecords.new.call(data)
+
+              if result.failure?
+                failed = Representer::HttpResponse.new(result.failure)
+                routing.halt failed.http_status_code, failed.to_json
               end
+              # http_response = Representer::HttpResponse.new(result.value!)
+              # response.status = http_response.http_status_code
+              # Representer::RecordsList.new(result.value!.message).to_json
 
-              result_response = Representer::HttpResponse.new(
-                Response::ApiResult.new(status: :ok, message: 'ok')
-              )
+
+
+              # temp = THSR::RecordMapper.new(data).filiter_store_data
+              # puts temp.inspect
+
+              # result = Repository::Records.create_parks_records(temp)
+
+              # result_response = Representer::HttpResponse.new(
+              #   Response::ApiResult.new(status: :ok, message: 'ok')
+              # )
     
-              response.status = result_response.http_status_code
-              result_response.to_json
+              response.status = result.value!.http_status_code
+              result.value!.to_json
             end
           end
         end
