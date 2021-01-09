@@ -5,7 +5,7 @@ require 'sequel'
 module THSRParking
   module Database
     # Object-Relational Mapper for Station
-    class ParkRecordOrm < Sequel::Model(:parks)
+    class ParkRecordOrm < Sequel::Model(:park_records)
       plugin :timestamps, update_on_create: true
 
       def self.find_or_create(park_info)
