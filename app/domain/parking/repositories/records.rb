@@ -20,8 +20,13 @@ module THSRParking
       end
 
       def self.find_avg_by_park_id(park_id)
+        if Econfig.env == 'production'
+          taipei = Time.now+(60*60*13)
+        else
+          taipei = Time.now
+        end
         Database::ParkRecordOrm.where(
-          :update_time => (Time.now - 60*60*3)..(Time.now),
+          :update_time => (taipei - 60*60*3)..(taipei),
           :park_origin_id => park_id).avg(:available_spaces)
       end
 
