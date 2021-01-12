@@ -38,7 +38,7 @@ module THSRParking
           longitude: db_record.longitude,
           total_spaces: 0,
           available_spaces: 0,
-          service_status: 0,
+          service_status: 1,
           full_status: 0,
           charge_status: 0,
           average: 0
